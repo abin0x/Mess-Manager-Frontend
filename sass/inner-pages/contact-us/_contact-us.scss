@@ -1,0 +1,269 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+/************ TABLE OF CONTENTS ***************
+
+  01. Get in touch
+  02. Get in touch information
+  03. Send message
+
+**********************************************/
+
+
+
+// Get in touch start
+.getInTouch {
+  padding: 150px 0 80px;
+  position: relative;
+
+  .getInTouchInner {
+    .getInTouchImg {
+      img {
+        width: 100%;
+      }
+    }
+
+    .getInTouchRow {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 100px;
+
+      .getInTouchCol {
+        .getInTouchContent{
+          .getInTouchMap{
+            iframe{
+              width: 100%;
+              height: 330px;
+            }
+          }
+        }
+        .getInTouchImg {
+          position: relative;
+
+          &:before {
+            position: absolute;
+            content: "";
+            background-image: url(../images/mask13.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 380px;
+            height: 250px;
+            right: 60px;
+            top: -80px;
+          }
+
+          .getInTouchImgInner {
+            display: flex;
+            gap: 20px;
+            position: relative;
+            z-index: 1;
+
+            .getInTouchImg1 {
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Get in touch end
+
+// Get in touch information start
+.getInTouchInfo {
+  padding: 80px 0;
+
+  .getInTouchInfoInner {
+    .getInTouchInfoRow {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .getInTouchInfoCol {
+        a {
+          display: block;
+
+          .getInTouchInfoItem {
+            width: 350px;
+            height: 350px;
+            position: relative;
+            transition: all 0.8s ease;
+
+            &:after,
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              border-radius: 300px 0px 300px 300px;
+              border: 1px solid $borderOrange;
+              background-color: $bgWhite;
+              width: 100%;
+              height: 100%;
+              transition: all 0.8s ease;
+            }
+
+            &:hover {
+              &:after {
+                transform: rotate(-45deg);
+              }
+
+              &:before {
+                transform: rotate(-25deg);
+              }
+
+              .getInTouchInfoOuter {
+                &:before {
+                  transform: rotate(-65deg);
+                }
+
+                .getInTouchInfoItemInner {
+                  .getInTouchInfoIcon {
+                    span {
+                      &:before {
+                        border-radius: 300px 0px 300px 300px;
+                        transform: rotate(-45deg);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .getInTouchInfoOuter {
+              width: 350px;
+              height: 350px;
+              padding: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+              transition: all 0.8s ease;
+
+              &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 300px 0px 300px 300px;
+                border: 1px solid $borderOrange;
+                background-color: $bgWhite;
+                width: 100%;
+                height: 100%;
+                transition: all 0.8s ease;
+              }
+
+              .getInTouchInfoItemInner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                position: relative;
+                z-index: 2;
+
+                .getInTouchInfoIcon {
+                  span {
+                    width: 80px;
+                    height: 80px;
+                    display: flex;
+                    background-color: $bgOrange;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.8s ease;
+                    border-radius: 50px;
+                    position: relative;
+
+                    img {
+                      position: relative;
+                      z-index: 1;
+                    }
+
+                    &:before {
+                      content: '';
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      border-radius: 50px;
+                      border: 1px solid $borderOrange;
+                      background-color: $bgOrange;
+                      width: 100%;
+                      height: 100%;
+                      transition: all 0.8s ease;
+                    }
+                  }
+                }
+
+                .getInTouchInfoContent {
+                  text-align: center;
+
+                  h6 {
+                    color: $textBlack;
+                    font-size: 20px;
+                    font-weight: 600;
+                  }
+
+                  p {
+                    color: $textGray;
+                    font-size: 18px;
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Get in touch information end
+
+// Send message start
+.sendMessage {
+  padding: 80px 0 0;
+
+  .sendMessageInner {
+    border-radius: 20px;
+    border: 1px solid $borderOrange;
+    background-color: $textWhite;
+    padding: 40px;
+
+    .sendMessageContentBox {
+      border-radius: 15px;
+      background-color: $textWhite;
+      box-shadow: 20px 10px 20px 0px rgba(0, 0, 0, 0.06);
+      padding: 40px 100px;
+      margin: -70px 50px 0 0px;
+      text-align: center;
+    }
+
+    .sendMessageFrom {
+      .sendMessageFromBox {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .formGroup {
+          input {
+            height: 50px;
+          }
+
+          .form-control {
+            border-radius: 6px;
+            border: 1px solid #E3E3E3;
+            background: #F5F5F5;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Send message end

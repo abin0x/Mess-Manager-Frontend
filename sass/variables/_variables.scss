@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+/************ TABLE OF CONTENTS ***************
+
+  01. other color
+  02. text color
+  03. bg color
+  04. button color
+  05. border color
+  06. font family
+  07. font weight
+
+**********************************************/
+
+// other color
+$orange: #FFA31E;
+$black: #111111;
+$white: #ffffff;
+$plumCheese: #5E0821;
+$gray: #999;
+$gradient:linear-gradient(90deg, #FA2456 0%, #FD735A 100%);
+$pink:#F92456;
+
+// text color
+$textOrange: #FFA31E;
+$textPlumCheese: #5E0821;
+$textBlack: #111111;
+$textWhite: #ffffff;
+$textGray: #999;
+$textGradient:linear-gradient(90deg, #FA2456 0%, #FD735A 100%);
+$textPink:#F92456;
+
+// bg color
+$bgOrange: #FFA31E;
+$bgPlumCheese: #5E0821;
+$bgBlack: #111111;
+$bgWhite: #ffffff;
+$bgGray: #999;
+$bgGradient:linear-gradient(90deg, #FA2456 0%, #FD735A 100%);
+$bgPink:#F92456;
+
+// button color
+$btnOrange: #FFA31E;
+$btnPlumCheese: #5E0821;
+$btnBlack: #111111;
+$btnWhite: #ffffff;
+$btnGray: #999;
+$btnGradient:linear-gradient(90deg, #FA2456 0%, #FD735A 100%);
+$btnPink:#F92456;
+
+// border color
+$borderOrange: #FFA31E;
+$borderPlumCheese: #5E0821;
+$borderBlack: #111111;
+$borderWhite: #ffffff;
+$borderGray: #999;
+$borderGradient:linear-gradient(90deg, #FA2456 0%, #FD735A 100%);
+$borderPink:#F92456;
+
+// font family
+$robotoFont: 'Roboto';
+$jacquesFrancoisFont: 'Jacques Francois';
+$coveredByYourGraceFont: 'Covered By Your Grace';
+$corinthiagoFont: 'Corinthiago';
+$righteousFont: 'Righteous';
+$kadwaFont: 'Kadwa';
+$irishGroverFont: 'Irish Grover';
+
+// font weight
+$fw100: 100;
+$fw200: 200;
+$fw300: 300;
+$fw400: 400;
+$fw500: 500;
+$fw600: 600;
+$fw700: 700;
+$fw800: 800;
+$fw900: 900;

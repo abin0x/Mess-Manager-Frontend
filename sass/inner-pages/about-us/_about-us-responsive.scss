@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+
+@include for-max-1199 {
+  .informationInto {
+    &:before {
+      width: 350px;
+    }
+
+    .informationIntoInner {
+      .informationIntoRow {
+        grid-template-columns: 400px 1fr;
+
+        .informationIntoCol {
+          .informationIntoImg {
+            .informationIntoImgInner {
+              &:after {
+                height: 400px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .howItWorkAbout {
+    &:before {
+      width: 230px;
+    }
+  }
+
+  .weWonAwards {
+    &:before {
+      width: 120px;
+      height: 400px;
+      left: 0;
+      top: -150px;
+    }
+  }
+
+  .innerPageBanner {
+    padding: 40px 0;
+  }
+}
+
+
+
+@include for-max-991 {
+
+  .informationInto {
+    &:before {
+      top: 200px;
+      height: 600px;
+      width: 350px;
+    }
+
+    .informationIntoInner {
+      .informationIntoRow {
+        grid-template-columns: 1fr;
+
+        .informationIntoCol {
+          .informationIntoImg {
+            .informationIntoImgInner {
+              &:after {
+                height: 695px;
+              }
+
+              &:before {
+                top: 390px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .innerPageBanner {
+    padding: 40px 0;
+  }
+
+  .innerPageBanner {
+    .innerPageBannerInner {
+      justify-content: center;
+
+      .innerPageBannerImgLeft,
+      .innerPageBannerImgRight {
+        display: none;
+      }
+    }
+  }
+}
+
+@include for-max-991 {
+  .howItWorkItem {
+    padding: 10px;
+  }
+
+  .howItWorkItem .howItWorkContent h4 {
+    font-size: 18px;
+  }
+}
+
+@include for-max-767 {
+  .informationInto {
+    .informationIntoInner {
+      .informationIntoRow {
+        gap: 50px;
+
+        .informationIntoCol {
+          .informationIntoImg {
+            .informationIntoImgInner {
+              &:after {
+                height: 510px;
+              }
+
+              &:before {
+                top: 285px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .howItWorkItem {
+    padding: 20px;
+  }
+
+  .aboutUsVideo {
+    .aboutUsVideoInner {
+      .aboutUsVideoContent {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .weWonAwards {
+    padding: 40px 0 0;
+
+    &:before {
+      content: unset;
+    }
+
+    .weWonAwardsInner {
+      .weWonAwardsContent {
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .informationInto {
+    padding: 40px 0;
+  }
+
+  .innerPageBanner {
+    .innerPageBannerInner {
+      .innerPageBannerContent {
+        h1 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+@include for-max-575 {
+  .informationInto {
+    &:before {
+      top: 80px;
+      height: 400px;
+      width: 220px;
+    }
+
+    .informationIntoInner {
+      .informationIntoRow {
+        .informationIntoCol {
+          .informationIntoImg {
+            .informationIntoImgInner {
+              &:before {
+                top: 132px;
+                right: 0;
+                width: 80px;
+              }
+
+              &:after {
+                height: 320px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .specialDishBtnGroup {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .innerPageBanner {
+    .innerPageBannerInner {
+      .innerPageBannerContent {
+        h1 {
+          font-size: 30px;
+        }
+
+        ul.breadcrumb {
+          li {
+            &.active {
+              font-size: 14px;
+            }
+
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-375 {
+  .innerPageBanner {
+    padding: 20px 0;
+
+    .innerPageBannerInner {
+      .innerPageBannerContent {
+        h1 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+@include for-max-1399 {
+  .sendMessage {
+    .sendMessageInner {
+      .sendMessageContentBox {
+        padding: 40px 60px;
+      }
+    }
+  }
+}
+
+@include for-max-1199 {
+  .sendMessage {
+    .sendMessageInner {
+      .sendMessageContentBox {
+        padding: 40px 20px;
+      }
+    }
+  }
+
+  .getInTouchInfo {
+    .getInTouchInfoInner {
+      .getInTouchInfoRow {
+        .getInTouchInfoCol {
+          a {
+            .getInTouchInfoItem {
+              width: 300px;
+              height: 300px;
+
+              .getInTouchInfoOuter {
+                width: 300px;
+                height: 300px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .getInTouch {
+    .getInTouchInner {
+      .getInTouchRow {
+        gap: 50px;
+
+        .getInTouchCol {
+          .getInTouchContent {
+            .getInTouchMap {
+              iframe {
+                width: 100%;
+                height: 260px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-991 {
+
+  .getInTouch {
+    padding: 80px 0 80px;
+
+    .getInTouchInner {
+      .getInTouchRow {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
+  .getInTouchInfo {
+    .getInTouchInfoInner {
+      .getInTouchInfoRow {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 120px;
+
+        .getInTouchInfoCol {
+          a {
+            .getInTouchInfoItem {
+              margin: 0 auto;
+
+              .getInTouchInfoOuter {
+                .getInTouchInfoItemInner {
+                  .getInTouchInfoContent {
+                    p {
+                      font-size: 16px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sendMessage {
+    .sendMessageInner {
+      .sendMessageContentBox {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .getInTouch {
+    .getInTouchInner {
+      .getInTouchRow {
+        gap: 110px;
+      }
+    }
+  }
+
+  .sendMessage .sendMessageInner {
+    padding: 24px;
+  }
+  .commonHeading h4 {
+    font-size: 26px;
+  }
+}
+
+@include for-max-767 {
+  .sendMessageFrom {
+    margin-top: 50px;
+  }
+
+  .getInTouchInfo {
+    .getInTouchInfoInner {
+      .getInTouchInfoRow {
+        .getInTouchInfoCol {
+          a {
+            .getInTouchInfoItem {
+              margin: 0 auto;
+
+              .getInTouchInfoOuter {
+                .getInTouchInfoItemInner {
+                  .getInTouchInfoContent {
+                    p {
+                      font-size: 14px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .getInTouchInfo {
+    padding: 100px 0 40px;
+  }
+
+  .sendMessage {
+    padding: 40px 0 0;
+
+    .sendMessageInner {
+      padding: 20px;
+    }
+  }
+
+  .getInTouch {
+    padding: 40px 0 40px;
+
+    .getInTouchInner {
+      .getInTouchRow {
+        gap: 50px;
+
+        .getInTouchCol {
+          .getInTouchImg:before {
+            height: 200px;
+            right: 40px;
+            top: -20px;
+          }
+        }
+      }
+    }
+  }
+}

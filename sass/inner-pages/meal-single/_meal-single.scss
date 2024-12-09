@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+/************ TABLE OF CONTENTS ***************
+
+  01. Thali Detail
+  02. Our Meal List
+
+**********************************************/
+
+// Thali Detail CSS Start
+.thaliDetail {
+  padding: 80px 0 0;
+  position: relative;
+
+  .thaliDetailInner {
+    .thaliDetailImg {
+      img {
+        width: 100%;
+      }
+    }
+
+    .thaliDetailRow {
+      display: grid;
+      grid-template-columns: 500px 1fr;
+      gap: 100px;
+
+      .thaliDetailCol {
+        .thaliDetailImg {
+          .thaliDetailImgInner {
+            position: relative;
+            border-radius: 353px 0px 353px 353px;
+            background: $bgOrange;
+            padding: 30px;
+
+            &:after {
+              content: '';
+              background-image: url('../images/mask14.png');
+              background-size: contain;
+              background-repeat: no-repeat;
+              position: absolute;
+              bottom: 0;
+              left: -135px;
+              width: 100%;
+              height: 500px;
+            }
+
+            .thaliImg {
+              position: relative;
+              z-index: 1;
+            }
+
+            .thaliDetailIcon {
+              width: 100px;
+              position: absolute;
+
+              &.thaliDetailIcon1 {
+                top: 20px;
+                left: 10px;
+              }
+
+              &.thaliDetailIcon2 {
+                top: 20px;
+                right: 10px;
+              }
+
+              &.thaliDetailIcon3 {
+                bottom: 80px;
+                left: -24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.thaliDetailGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  .specialDishBtnGroup {
+    margin-top: 0;
+  }
+
+  .quantity-container {
+    .quantity {
+      width: 40px;
+      text-align: center;
+    }
+
+    .decrease,
+    .increase {
+      border: 0;
+      background-color: $bgWhite;
+    }
+  }
+}
+
+.quantityThaliContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .quantityLabel {
+    color: $textBlack;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+// Thali Detail CSS End
+
+
+
+// Our Meal List CSS Start
+.thaliList {
+  .list-group {
+    flex-wrap: wrap;
+    gap: 10px 0;
+
+    .list-group-item {
+      border-color: $borderOrange;
+    }
+  }
+}
+
+// Our Meal List CSS End

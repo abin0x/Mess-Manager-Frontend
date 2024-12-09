@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+   Template Name: foxhub
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+@include for-max-1920{
+  .searchBox {
+    .searchBoxCard {
+      .searchBoxInner {
+        .searchBoxForm {
+          .input-group {
+            input {
+              width: 450px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-991{
+  .searchBox {
+    .searchBoxCard {
+      .searchBoxInner {
+        .searchBoxForm {
+          .input-group {
+            input {
+              width: 350px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-575{
+  .searchBox {
+    .searchBoxCard {
+      .searchBoxInner {
+        .searchBoxLogo {
+          img {
+            width: 180px;
+          }
+        }
+        .searchBoxForm {
+          .input-group {
+            input {
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-450{
+  .searchBox {
+    .searchBoxCard {
+      .searchBoxInner {
+        .searchBoxLogo {
+          img {
+            width: 150px;
+          }
+        }
+        .searchBoxForm {
+          .input-group {
+            input {
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

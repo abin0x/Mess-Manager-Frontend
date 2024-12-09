@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+
+@include for-max-1599 {
+  .loginSec {
+    .loginSecContainer {
+      .loginSecInner {
+        .loginForm {
+          padding: 40px 80px;
+
+          .loginFormOuter {
+            gap: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-1399 {
+  .loginSec {
+    .loginSecContainer {
+      .loginSecInner {
+        grid-template-columns: 120px 1fr 120px;
+
+        .loginTab {
+          a {
+            padding: 20px 10px;
+          }
+        }
+
+        .loginSecDotsNav {
+          .backBtn {
+            padding: 20px;
+          }
+
+          .loginDotsNavInner {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-1199 {
+  .loginSec {
+    .loginSecContainer {
+      .loginSecInner {
+        .loginForm {
+          padding: 40px 20px;
+
+          .loginFormOuter {
+            grid-template-columns: 1fr 300px;
+            gap: 20px;
+
+            .loginFormInner {
+              p {
+                margin-top: 40px;
+              }
+            }
+          }
+
+          .loginSignupHeading {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-991 {
+  .loginSec {
+    .loginSecContainer {
+      .loginSecInner {
+        grid-template-columns: 80px 1fr 100px;
+
+        .loginForm {
+          .loginFormOuter {
+            grid-template-columns: 1fr 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-767 {
+  .loginSec {
+    .loginSecContainer {
+      .loginSecInner {
+        .loginForm {
+          .loginFormOuter {
+            grid-template-columns: 1fr;
+
+            .loginFormImg {
+              display: none;
+            }
+
+            .loginFormInner {
+              p {
+                font-size: 16px;
+              }
+
+              form {
+                .loginGroup {
+                  label {
+                    font-size: 16px;
+                  }
+
+                  .formRememberGroup {
+                    .form-check {
+                      label {
+                        &.form-check-label {
+                          font-size: 14px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .loginSignupHeading {
+            h2 {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-575 {
+  .loginSec {
+    .loginSecContainer {
+      .loginSecInner {
+        grid-template-columns: 50px 1fr;
+
+        .loginForm {
+          .loginFormOuter {
+            .loginFormInner {
+              form {
+                .loginGroup {
+                  margin-bottom: 15px;
+
+                  label {
+                    font-size: 16px;
+                  }
+
+                  .form-control {
+                    height: 50px;
+                  }
+
+                  .formRememberGroup {
+                    align-items: self-start;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    .form-check {
+                      margin-top: 8px;
+                    }
+                    .forgotPassword {
+                      padding: 6px;
+                    }
+                  }
+                }
+              }
+
+              p {
+                margin-top: 20px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .loginTab {
+          display: none;
+        }
+
+        .loginSecDotsNav {
+          .backBtn {
+            padding: 20px 10px;
+
+            svg {
+              width: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

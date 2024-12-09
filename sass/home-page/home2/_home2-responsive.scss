@@ -1,0 +1,800 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+
+@include for-max-1699 {
+  .LetsEatBanner {
+    .bannerMask2 {
+      left: 150px;
+    }
+  }
+
+  .LetsEatBanner {
+    .bannerMask1 {
+      left: 250px;
+    }
+  }
+
+  .LetsEatBanner {
+    .bannerMask4 {
+      right: 150px;
+    }
+  }
+
+  .LetsEatBanner {
+    .bannerMask3 {
+      right: 200px;
+    }
+  }
+}
+
+@include for-max-1599 {
+  .regularTiffinBanner .regularTiffinBannerRow {
+    gap: 30px;
+  }
+}
+
+
+@include for-max-1440 {
+  .LetsEatBanner {
+    .bannerMask3 {
+      right: 100px;
+    }
+  }
+
+  .LetsEatBanner {
+    .bannerMask1 {
+      left: 80px;
+    }
+  }
+
+  .LetsEatBanner {
+    .bannerMask2 {
+      left: 90px;
+      width: 90px;
+      top: 350px;
+    }
+  }
+
+  .LetsEatBanner {
+    .bannerMask4 {
+      right: 150px;
+      width: 90px;
+      top: 350px;
+    }
+  }
+
+  .LetsEatBanner {
+    .bannerMask3 {
+      right: 50px;
+      width: 100px;
+    }
+  }
+
+  .LetsEatBanner {
+    &::after {
+      right: 10%;
+    }
+  }
+
+  .specialTiffinSecondary {
+    &::before {
+      right: 15%;
+    }
+  }
+
+  .specialTiffinSecondaryGroup {
+    .specialTiffinSecondaryItem {
+      .specialTiffinSecondaryContent {
+        h4 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .servicePrice.OurServicePackages {
+    &::before {
+      right: 180px;
+    }
+  }
+}
+
+@include for-max-1399 {
+  .regularTiffinBanner {
+    .regularTiffinBannerRow {
+      display: grid;
+      grid-template-columns: 1fr 50%;
+    }
+
+    .regularTiffinBannerInner {
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@include for-max-1199 {
+  .LetsEatBanner {
+    .LetsEatBannerInner {
+      h1 {
+        font-size: 160px;
+
+        &::after {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+
+    .LetsEatImg {
+      .LetsEatThali {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -88px;
+        width: 54%;
+      }
+    }
+  }
+
+  .specialTiffinSecondaryGroup {
+    .specialTiffinSecondaryItem {
+      margin-bottom: 30px;
+    }
+  }
+
+  .bxAboutUsContent {
+    .bxAboutUsList {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+  }
+
+  .servicePrice {
+    &.OurServicePackages {
+      &::before {
+        right: 110px;
+      }
+    }
+  }
+
+  .commonHeading {
+    &.commonSecondaryHeading {
+      &.headingCenter {
+        h4 {
+          &:before {
+            content: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .LetsEatBanner {
+    .bannerMask4 {
+      right: 100px;
+    }
+  }
+
+  .servicePrice {
+    &.OurServicePackages {
+      .servicePriceInner {
+        .servicePriceGroup {
+          .servicePriceGroupInner {
+            grid-template-columns: repeat(3, 1fr);
+
+            .servicePriceCard {
+              .servicePriceCardInner {
+                .servicePriceCardPlanList {
+                  padding: 20px;
+
+                  ul {
+                    li {
+                      .priceTbl {
+                        font-size: 16px;
+                      }
+
+                      .planLabel {
+                        h5 {
+                          font-size: 16px;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .servicePriceCardBtn {
+                  padding: 0 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mobileApp {
+    .mobileAppInner {
+      .mobileAppRow {
+        &::after {
+          width: 300px;
+          height: 300px;
+          top: -90px;
+        }
+      }
+    }
+  }
+
+  .ourBlog {
+    &.ourBlogSecondary {
+      &::after {
+        width: 80px;
+        height: 100px;
+      }
+
+      &::before {
+        width: 80px;
+        height: 100px;
+      }
+    }
+  }
+
+  .meetOurChef {
+    &::before {
+      width: 80px;
+      height: 100px;
+    }
+  }
+
+  .servicePrice {
+    &.OurServicePackages {
+      &::after {
+        width: 80px;
+        height: 100px;
+      }
+    }
+  }
+
+  .servicePrice {
+    &.OurServicePackages {
+      &::before {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .meetOurChef {
+    .meetOurChefInner {
+      &::before {
+        right: 8%;
+      }
+    }
+  }
+
+  .regularTiffinBanner .regularTiffinBannerInner h2 {
+    font-size: 22px;
+  }
+}
+
+@include for-max-1199 {
+  .LetsEatBanner {
+    .bannerMask1 {
+      left: 120px;
+      width: 20px;
+      top: 100px;
+    }
+  }
+
+  .LetsEatBanner {
+    .bannerMask4 {
+      right: 50px;
+      width: 30px;
+    }
+  }
+
+  .LetsEatBanner {
+    .bannerMask3 {
+      right: 100px;
+      width: 60px;
+      top: 380px;
+    }
+  }
+
+  .LetsEatBanner {
+    .LetsEatImg {
+      .LetsEatThali {
+        width: 70%;
+      }
+    }
+  }
+
+  .LetsEatBanner {
+    .bannerMask2 {
+      left: 40px;
+      width: 50px;
+      top: 350px;
+    }
+  }
+
+  .LetsEatBanner {
+    .bannerMask3 {
+      right: 50px;
+      top: 400px;
+    }
+  }
+
+  .mobileApp {
+    .mobileAppInner {
+      .mobileAppRow {
+        &::after {
+          width: 200px;
+          height: 300px;
+          top: -140px;
+          left: 48%;
+        }
+
+        .mobileAppContent {
+          .mobileAppContentInner {
+            h2 {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ourBlog {
+    &.ourBlogSecondary {
+      .ourBlogInner {
+        &::before {
+          right: 6%;
+        }
+      }
+    }
+  }
+
+  .subscribeNewsletter {
+    .subscribeNewsletterInner {
+      .subscribeNewsletterGroup {
+        width: 100%;
+      }
+    }
+  }
+
+  .meetOurChefItem {
+    margin-bottom: 50px;
+  }
+
+  .LetsEatBanner {
+    .bannerMask3 {
+      right: 50px;
+      top: 220px;
+    }
+  }
+
+  .regularTiffinBanner {
+    .regularTiffinBannerInner {
+      h2 {
+        padding: 24px 100px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include for-max-991 {
+  .servicePrice {
+    &.OurServicePackages {
+      .servicePriceInner {
+        .servicePriceGroup {
+          .servicePriceGroupInner {
+            grid-template-columns: repeat(1, 1fr);
+
+            .servicePriceCard {
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .regularTiffinBanner {
+    .regularTiffinBannerRow {
+      grid-template-columns: 1fr 40%;
+    }
+
+    .regularTiffinBannerInner {
+      h2 {
+        font-size: 20px;
+        padding: 24px 70px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include for-max-767 {
+  .LetsEatBanner {
+    .LetsEatBannerInner {
+      h1 {
+        font-size: 100px;
+
+        &::before {
+          left: 5px;
+          bottom: 18px;
+        }
+      }
+    }
+
+    .LetsEatImg {
+      .LetsEatThali {
+        width: 90%;
+        top: -40px;
+      }
+    }
+  }
+
+  .mobileAppImg {
+    margin-bottom: 30px;
+  }
+
+  .bxAboutUsImg {
+    .bxAboutUsImgInner {
+      margin-bottom: 40px;
+    }
+  }
+
+  .LetsEatBanner {
+    .LetsEatBannerInner {
+      h1 {
+        &::after {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+
+  .specialTiffinSecondary,
+  .bxAboutUs,
+  .servicePrice.OurServicePackages,
+  .meetOurChef {
+    padding: 40px 0;
+  }
+
+  .servicePrice {
+    &.OurServicePackages {
+      &::before {
+        right: 40px;
+        top: 16px;
+      }
+    }
+  }
+
+  .servicePrice.OurServicePackages::after,
+  .servicePrice.OurServicePackages::before,
+  .LetsEatBanner .LetsEatBannerInner h1::before,
+  .ourBlog.ourBlogSecondary::after,
+  .ourBlog.ourBlogSecondary::before,
+  .meetOurChef::before,
+  .LetsEatBanner .LetsEatBannerInner h1::after,
+  .meetOurChef .meetOurChefInner::before,
+  .meetOurChef .meetOurChefInner::after,
+  .meetOurChef::after,
+  .bxAboutUs::before,
+  .bxAboutUs::after,
+  .ourBlog.ourBlogSecondary .ourBlogInner::before,
+  .specialTiffinSecondary::before,
+  .LetsEatBanner::before,
+  .LetsEatBanner::after {
+    content: unset;
+  }
+
+  .bxAboutUsContent {
+    .bxAboutUsService {
+      h5 {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .LetsEatBanner .bannerMask1,
+  .LetsEatBanner .bannerMask2,
+  .LetsEatBanner .bannerMask3,
+  .LetsEatBanner .bannerMask4 {
+    display: none;
+  }
+
+  .letsEatThaliTiffin {
+    width: 90%;
+    margin-top: 54px;
+  }
+
+  .bxAboutUsContent {
+    .bxAboutUsList {
+      .bxAboutUsListItem {
+        .bxAboutUsListContent {
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .commonHeading {
+    h4 {
+      font-size: 22px;
+    }
+  }
+
+  .subscribeNewsletter {
+    .subscribeNewsletterInner {
+      .subscribeNewsletterGroup {
+        .subscribeNewsletterInput {
+          .inputGroup {
+            .input-group {
+              gap: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .partnerLogo {
+    .partnerLogoInner {
+      .partnerLogoItemGroup {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .mobileApp {
+    .mobileAppInner {
+      .mobileAppRow {
+        &::after {
+          content: unset;
+        }
+
+        .mobileAppContent {
+          &::after {
+            content: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .LetsEatBanner {
+    &::after {
+      right: 12%;
+      bottom: 0px;
+    }
+  }
+
+  .LetsEatBanner {
+    padding: 80px 0 20px;
+  }
+
+  .servicePrice.OurServicePackages {
+    padding-top: 0;
+  }
+
+  .mobileApp {
+    padding: 40px 0 0;
+  }
+
+  .regularTiffinBanner {
+    .regularTiffinBannerRow {
+      grid-template-columns: 1fr;
+
+      .regularTiffinBannerCol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .regularTiffinBannerInner {
+      h2 {
+        font-size: 20px;
+        padding: 24px 70px;
+        text-align: center;
+      }
+
+      .btn {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@include for-max-575 {
+  .mobileApp {
+    .mobileAppInner {
+      .mobileAppRow {
+        .mobileAppContent {
+          .mobileAppStore {
+            align-items: self-start;
+            gap: 10px;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+
+  .subscribeNewsletter {
+    .subscribeNewsletterInner {
+      padding: 15px;
+      border-radius: 20px;
+
+      .subscribeNewsletterGroup {
+        h5 {
+          font-size: 22px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        .subscribeNewsletterInput {
+          .inputGroup {
+            .input-group {
+              gap: 10px;
+              flex-direction: column;
+
+              input {
+                width: 100%;
+                height: 50px;
+
+                &::placeholder {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mobileApp {
+    .mobileAppInner {
+      .mobileAppRow {
+        .mobileAppContent {
+          .mobileAppContentInner {
+            h2 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .LetsEatBanner {
+    .LetsEatBannerInner {
+      h1 {
+        font-size: 80px;
+      }
+    }
+  }
+
+  .LetsEatBanner {
+    .LetsEatImg {
+      .LetsEatThali {
+        width: 90%;
+        top: -5px;
+      }
+    }
+  }
+
+  .loginBtn {
+    .btnThird {
+      display: inline-flex;
+      padding: 6px;
+    }
+  }
+
+  .servicePrice {
+    &.OurServicePackages {
+      &.OurServicePackages {
+        .servicePriceInner {
+          .servicePriceGroup {
+            .servicePriceGroupInner {
+              .servicePriceCard {
+                .servicePriceCardInner {
+                  .servicePriceCardHeading {
+                    h4 {
+                      font-size: 30px;
+                    }
+
+                    span {
+                      font-size: 16px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .specialTiffinSecondaryGroup {
+    .specialTiffinSecondaryItem {
+      .specialTiffinSecondaryImg {
+        width: 180px;
+        height: 180px;
+
+        img {
+          width: 140px;
+          height: 140px;
+        }
+      }
+
+      .specialTiffinSecondaryContent {
+        h4 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .regularTiffinBanner {
+    .regularTiffinBannerInner {
+      h2 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include for-max-450 {
+  .LetsEatBanner {
+    .LetsEatBannerInner {
+      h1 {
+        font-size: 56px;
+      }
+    }
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+  .servicePrice.OurServicePackages .servicePriceInner .servicePriceGroup .servicePriceGroupInner .servicePriceCard .servicePriceCardInner .servicePriceCardPlanList ul li .planLabel h5, .servicePrice.OurServicePackages .servicePriceInner .servicePriceGroup .servicePriceGroupInner .servicePriceCard .servicePriceCardInner .servicePriceCardPlanList ul li .priceTbl, .servicePrice .servicePriceInner .servicePriceGroup .servicePriceGroupInner .servicePriceCard .servicePriceCardInner .servicePriceCardBtn a {
+    font-size: 14px;
+}
+}

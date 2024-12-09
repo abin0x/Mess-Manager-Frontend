@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+/************ TABLE OF CONTENTS ***************
+
+  01. header
+
+**********************************************/
+// header css start
+.header {
+  background: $bgWhite;
+  border-bottom: 1px solid#EBEBEB;
+
+  &.headerActive {
+    position: fixed;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.35s ease-out;
+    z-index: 1024;
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+      }
+
+      to {
+        transform: translateY(0);
+      }
+    }
+  }
+  .headerInner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+
+    .navbar {
+      width: 100%;
+
+      .navbar-collapse {
+        justify-content: flex-end;
+
+        .navbar-nav {
+          gap: 20px;
+
+          li {
+            a {
+              color: $textBlack;
+              font-size: 16px;
+              font-weight: $fw500;
+              transition: all 0.4s ease;
+
+              &.active {
+                color: $textOrange;
+                position: relative;
+
+                &::before {
+                  content: "";
+                  width: 6px;
+                  height: 6px;
+                  border-radius: 50px;
+                  background-color: $bgOrange;
+                  display: inline-block;
+                  position: absolute;
+                  bottom: -6px;
+                  transform: translateX(-50%);
+                  left: 50%;
+                }
+              }
+
+              &:hover {
+                color: $textOrange;
+                position: relative;
+
+                &::before {
+                  content: "";
+                  width: 6px;
+                  height: 6px;
+                  border-radius: 50px;
+                  background-color: $bgOrange;
+                  display: inline-block;
+                  position: absolute;
+                  bottom: -6px;
+                  transform: translateX(-50%);
+                  left: 50%;
+                }
+              }
+            }
+
+            .dropdown-menu {
+              li {
+                a {
+                  padding: 10px;
+                  transition: all 0.4s ease;
+
+                  &:hover {
+                    background-color: $bgOrange;
+                    color: #fff;
+
+                    &::before {
+                      content: unset;
+                    }
+                  }
+                }
+              }
+            }
+
+            .dropdown-toggle {
+              &::after {
+                font-family: "FontAwesome";
+                content: "\f078";
+                border: 0;
+                position: relative;
+                top: 1px;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .rightMenu {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .search,
+      .cart {
+        width: 20px;
+      }
+
+      .cart {
+        position: relative;
+
+        span {
+          width: 18px;
+          height: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #ffffff;
+          font-size: 10px;
+          font-weight: 500;
+          background-color: #FFA31E;
+          border-radius: 50%;
+          position: absolute;
+          top: -7px;
+          right: -6px;
+        }
+      }
+
+      .loginBtn {
+        a {
+          white-space: nowrap;
+        }
+
+        .headerProfileImg {
+          img {
+            width: 60px;
+            display: inline-block;
+            border-radius: 50px;
+          }
+        }
+      }
+
+      .search,
+      .cart {
+        img {
+          width: 24px;
+        }
+      }
+    }
+  }
+}
+
+// header css end
+
+// header home2 css start
+.header {
+  &.headerSecondary {
+    position: fixed;
+    top: 0;
+    background: transparent;
+    z-index: 99;
+
+    &.headerActive {
+      background: $textWhite;
+    }
+
+    .headerInner {
+      .navbar {
+        .navbar-collapse {
+          .navbar-nav {
+            li {
+              a {
+                &.active {
+                  color: $bgPink;
+                  position: relative;
+
+                  &::before {
+                    content: "";
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50px;
+                    background-color: $bgPink;
+                    display: inline-block;
+                    position: absolute;
+                    bottom: -6px;
+                    transform: translateX(-50%);
+                    left: 50%;
+                  }
+                }
+
+                &:hover {
+                  color: $textPink;
+                  position: relative;
+
+                  &::before {
+                    content: "";
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50px;
+                    background-color: $bgPink;
+                    display: inline-block;
+                    position: absolute;
+                    bottom: -6px;
+                    transform: translateX(-50%);
+                    left: 50%;
+                  }
+                }
+              }
+
+              .dropdown-menu {
+                padding: 0;
+
+                li {
+                  margin-bottom: 1px;
+
+                  a {
+                    &.active {
+                      background-color: $bgPink;
+                      color: $textWhite;
+                    }
+
+                    &:hover {
+                      background-color: $bgPink;
+                      color: $textWhite;
+
+                      &::before {
+                        content: unset;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .rightMenu {
+        .cart {
+          span {
+            background-color: $bgPink;
+          }
+        }
+      }
+    }
+  }
+}
+
+// header home2 css end

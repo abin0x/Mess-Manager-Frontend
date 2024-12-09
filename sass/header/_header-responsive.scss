@@ -1,0 +1,333 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+@include for-max-1199 {
+
+  .header {
+    overflow: hidden;
+
+    .headerInner {
+      .navbar {
+        .navbar-collapse {
+          &#collapsibleNavbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 9999;
+            width: 280px;
+            justify-content: flex-start;
+            padding: 20px;
+            height: 100%;
+            align-items: flex-start;
+            box-shadow: 0px 5px 10px 1px #cac8c8;
+            transform: translateX(0px);
+            transition: all 0.6s ease;
+
+            &.collapse {
+              &:not(.show) {
+                display: block;
+                transform: translateX(-550px);
+              }
+            }
+          }
+
+          .navbar-nav {
+            width: 100%;
+            gap: 20px;
+            flex-direction: column;
+
+            li {
+              a {
+                &.active {
+                  &::before {
+                    content: unset;
+                  }
+                }
+
+                &:hover {
+                  &::before {
+                    content: unset;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .rightMenu {
+
+        .search,
+        .cart {
+          width: 30px;
+        }
+
+        .loginBtn {
+          span {
+            display: none;
+          }
+
+        }
+
+        .btnPrimary {
+          padding: 5px 12px;
+
+          img {
+            width: 52px;
+          }
+        }
+
+        .menuToggle {
+          margin-top: -10px;
+        }
+      }
+    }
+  }
+
+  .collapsing {
+    height: auto;
+  }
+
+  // toggle css
+  #nav-icon2 {
+    width: 38px;
+    height: auto;
+    position: relative;
+    margin: 0px auto;
+    transform: rotate(0deg);
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+    display: block;
+  }
+
+  #nav-icon2 {
+    span {
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 50%;
+      background: #FFA31E;
+      opacity: 1;
+      transform: rotate(0deg);
+      transition: 0.6s ease-in-out;
+    }
+  }
+
+  .headerSecondary {
+    #nav-icon2 {
+      span {
+        background: #fc6159;
+        width: 50%;
+      }
+    }
+  }
+
+
+  #nav-icon2 {
+    span {
+      &:nth-child(even) {
+        left: 50%;
+        border-radius: 0 9px 9px 0;
+      }
+
+      &:nth-child(odd) {
+        left: 0px;
+        border-radius: 9px 0 0 9px;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        top: -18px;
+      }
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        top: 0px;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        top: -12px;
+      }
+
+      &:nth-child(5),
+      &:nth-child(6) {
+        top: 11px;
+      }
+    }
+
+    &.open {
+      span {
+
+        &:nth-child(1),
+        &:nth-child(6) {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2),
+        &:nth-child(5) {
+          transform: rotate(-45deg);
+        }
+
+        &:nth-child(3) {
+          left: -50%;
+          opacity: 0;
+        }
+
+        &:nth-child(4) {
+          left: 100%;
+          opacity: 0;
+        }
+
+        &:nth-child(1) {
+          left: 3px;
+          top: -6px;
+        }
+
+        &:nth-child(2) {
+          left: calc(50% - 5px);
+          top: -6px;
+        }
+
+        &:nth-child(5) {
+          left: 4px;
+          top: 4px;
+        }
+
+        &:nth-child(6) {
+          left: calc(50% - 5px);
+          top: 5px;
+        }
+      }
+    }
+  }
+
+  .header {
+    &.headerSecondary {
+      .headerInner {
+        .navbar {
+          .navbar-collapse {
+            .navbar-nav {
+              li {
+                a {
+                  &:hover {
+                    &::before {
+                      content: unset;
+                    }
+                  }
+
+                  &.active {
+                    &::before {
+                      content: unset;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@include for-max-767 {
+  .header {
+    overflow: hidden;
+
+    .headerInner {
+      .navbar {
+        a.navbar-brand {
+          img {
+            width: 160px;
+          }
+        }
+      }
+
+      .rightMenu {
+        .btnPrimary {
+          padding: 5px 12px;
+
+          img {
+            width: 52px;
+          }
+        }
+      }
+
+      .menuToggle {
+        margin-top: -10px;
+      }
+    }
+  }
+}
+
+@include for-max-575 {
+  .header {
+    .headerInner {
+      .rightMenu {
+        gap: 8px;
+
+        .search,
+        .cart {
+          img {
+            width: 18px;
+          }
+        }
+
+        .cart {
+          span {
+            right: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  #nav-icon2 {
+    width: 25px;
+
+    span {
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        top: -10px;
+      }
+
+      &:nth-child(5),
+      &:nth-child(6) {
+        top: 10px;
+      }
+    }
+
+    &.open {
+      span {
+        &:nth-child(1) {
+          left: 3px;
+          top: -6px;
+        }
+
+        &:nth-child(2) {
+          left: calc(50% - 2px);
+          top: -6px;
+        }
+
+        &:nth-child(5) {
+          left: 3px;
+          top: 2px;
+        }
+
+        &:nth-child(6) {
+          left: calc(50% - 2px);
+          top: 2px;
+        }
+      }
+    }
+  }
+}

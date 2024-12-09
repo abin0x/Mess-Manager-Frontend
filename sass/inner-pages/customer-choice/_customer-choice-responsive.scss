@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+@include for-max-1599 {
+  .lbWatchVideo {
+    .lbWatchVideoInner {
+      .lbArrow {
+        width: 45%;
+      }
+    }
+  }
+}
+
+@include for-max-1399 {
+  .lbWatchVideo {
+    .lbWatchVideoInner {
+      .lbArrow {
+        width: 43%;
+      }
+    }
+  }
+}
+
+@include for-max-1199 {
+  .lbWatchVideo {
+    .lbWatchVideoInner {
+      .lbArrow {
+        width: 42%;
+      }
+    }
+  }
+
+  .customerChoiceVideo,
+  .customerChoiceVideo:after,
+  .customerChoiceVideo:before {
+    width: 400px;
+    height: 400px;
+  }
+
+  .reviewStar {
+    .reviewStarInner {
+      .reviewStarHead {
+        .reviewStarPoint {
+          span {
+            font-size: 60px;
+          }
+        }
+
+        .review5Star {
+          .review5StarInner {
+            a {
+              i {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+
+        .rating {
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .reviewComment .reviewCommentInner .reviewCommentItem .reviewCommentItemInner .reviewCommentTxt p {
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@include for-max-991 {
+
+  .customerChoiceVideo,
+  .customerChoiceVideo:after,
+  .customerChoiceVideo:before {
+    width: 300px;
+    height: 300px;
+  }
+
+  .reviewStar .reviewStarInner .reviewStarHead {
+    display: flex;
+    align-items: self-start;
+    gap: 0px;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .reviewComment .reviewCommentInner .reviewCommenHeading h5 {
+    font-size: 18px;
+  }
+}
+
+@include for-max-767 {
+
+  .customerChoiceVideo,
+  .customerChoiceVideo:after,
+  .customerChoiceVideo:before {
+    width: 200px;
+    height: 200px;
+  }
+
+  .customerChoicePlayBtn {
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .customerReview {
+    .customerReviewInner {
+      .tab-content {
+        .descriptionInner {
+          p {
+            color: #999;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .reviewStar {
+    margin-bottom: 40px;
+  }
+}
+
+@include for-max-767 {
+  .lbWatchVideo {
+    .lbWatchVideoInner {
+      .lbWatchVideoRow {
+        .specialDishBtnGroup {
+          margin-top: 0;
+        }
+
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+      }
+    }
+  }
+
+  .customerChoiceVideo {
+    width: 200px;
+    height: 200px;
+    margin: 0 50px 0px auto;
+    z-index: 2;
+  }
+
+  .lbWatchVideo,
+  .customerReview {
+    padding: 40px 0 0;
+  }
+
+  .customerReview {
+    .customerReviewInner {
+      .nav-pills {
+        li {
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .reviewComment .reviewCommentInner .reviewCommentItemGroup .reviewCommentItem .reviewCommentItemInner .reviewCommentTxt p {
+    font-size: 14px;
+  }
+}
+@include for-max-575 {
+  .reviewComment .reviewCommentInner .reviewCommentItemGroup .reviewCommentItem .reviewCommentItemInner .reviewCommentHead {
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+}
+
+@include for-max-450 {
+  .lbWatchVideo {
+    .lbWatchVideoInner {
+      .lbArrow {
+        top: 70px;
+        left: 38px;
+        width: 48%;
+      }
+    }
+  }
+
+  .customerChoiceList {
+    .list-group {
+      .list-group-item {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .specialDishBtnGroup {
+    .specialDishWatchVideoBtn {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .reviewComment .reviewCommentInner .reviewCommentItemGroup .reviewCommentItem .reviewCommentItemInner .reviewCommentTxt p {
+    font-size: 12px;
+  }
+}

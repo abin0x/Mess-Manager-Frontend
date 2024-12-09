@@ -1,0 +1,1322 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+/************ TABLE OF CONTENTS ***************
+
+  01. common heading
+  02. Special Tiffin 
+  03. Our Meal Plan
+  04. Delivery Food
+  05. Customer Says
+  06. How It Work
+  07. Our Chef
+  08. Customer Says
+  09. Our Blog
+  10. Trusted by users
+
+**********************************************/
+// Special Tiffin 
+.specialDishTiffin {
+  padding: 150px 0;
+  overflow: hidden;
+
+  .specialDishTiffinInner {
+    .specialDishTiffinRow {
+      display: grid;
+      grid-template-columns: 600px 1fr;
+      gap: 50px;
+
+      .specialDishTiffinCol {
+
+        span.moreFaster {
+          color: $textOrange;
+          font-size: 18px;
+          font-weight: 400;
+          background-color: #fff6e8;
+          padding: 12px 25px;
+          display: inline-block;
+          border-radius: 50px;
+        }
+
+        h1 {
+          color: $textBlack;
+          font-family: $jacquesFrancoisFont;
+          font-size: 64px;
+          font-weight: 400;
+
+          span {
+            color: $textOrange;
+            font-family: $coveredByYourGraceFont;
+          }
+        }
+
+        p {
+          color: $textGray;
+          font-size: 18px;
+          font-weight: 400;
+        }
+
+
+        .ourHappyCustomer {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          margin-top: 40px;
+
+          .ourHappyCustomerImg {
+            a {
+              margin-left: -40px;
+
+              &:first-child {
+                margin-left: 0px;
+              }
+
+              &:hover {
+                position: relative;
+                z-index: 2;
+              }
+            }
+          }
+
+          .ourHappyCustomerContent {
+            span.ourHappyTitle {
+              color: $textBlack;
+              font-size: 20px;
+              font-weight: 500;
+            }
+
+            p {
+              i.fa-solid {
+                color: $textOrange;
+              }
+
+              color: $textBlack;
+              font-size: 20px;
+              font-weight: 500;
+
+              span.review {
+                color: $textGray;
+              }
+            }
+          }
+        }
+
+        .specialTiffinBannerImg {
+          position: relative;
+
+          .specialDishTiffinImg {
+            text-align: center;
+            position: relative;
+
+            .bgBannerInnerImg {
+              position: absolute;
+              transform: translate(-50%, -50%);
+              left: 50%;
+              top: 50%;
+            }
+
+            .maskImg {
+              position: absolute;
+
+              &.maskImg1 {
+                top: 60px;
+                right: 30px;
+              }
+
+              &.maskImg2 {
+                left: 80px;
+                bottom: 40px;
+              }
+
+              &.maskImg3 {
+                top: 90px;
+                left: 90px;
+              }
+            }
+          }
+
+          .sTiffinBox {
+            display: flex;
+            gap: 40px;
+            background-color: #fff;
+            box-shadow: 0px 0px 4px 2px #ececec;
+            border-radius: 50px 0 50px 50px;
+            width: fit-content;
+
+            &.specialTiffinCall {
+              padding: 10px;
+              position: absolute;
+              left: -60px;
+              bottom: 30%;
+            }
+
+            .specialTiffinLeft {
+              display: flex;
+              gap: 10px;
+
+              .specialTiffinImg {}
+
+              .specialTiffinTxt {
+                h5 {
+                  color: $textBlack;
+                  font-size: 14px;
+                  font-weight: 500;
+                }
+
+                p {
+                  color: $textGray;
+                  font-size: 12px;
+                  font-weight: 500;
+                }
+              }
+            }
+
+            .specialTiffinRight {}
+
+            &.splTiffinRating {
+              position: absolute;
+              bottom: -50px;
+              transform: translateX(-50%);
+              left: 50%;
+
+              .specialTiffinLeft {
+                padding: 10px;
+
+                h5 {
+                  color: $textBlack;
+                  font-size: 18px;
+                  font-weight: 500;
+                }
+
+                span {
+                  .fa-star {
+                    color: $textOrange;
+                    font-size: 14px;
+                  }
+                }
+
+                p {
+                  color: $textBlack;
+                  font-size: 14px;
+                  font-weight: 500;
+                }
+              }
+
+              .specialTiffinRight {
+                .discountLabel {
+                  position: relative;
+                  margin-right: 40px;
+
+                  span {
+                    position: absolute;
+                    transform: translateX(-50%);
+                    top: 0px;
+                    left: 50%;
+                    color: $textWhite;
+                    font-size: 20px;
+                    font-weight: 500;
+
+                  }
+                }
+              }
+            }
+          }
+
+          svg.arrowLine {
+            position: absolute;
+            top: -135px;
+            right: 50px;
+            animation: upDown 10s ease-in-out infinite;
+          }
+
+          .makTiff {
+            position: absolute;
+            top: -45px;
+            transform: translateX(-50%);
+            left: 50%;
+          }
+
+          .timeIcon {
+            position: absolute;
+            top: -60px;
+            left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.specialDishBtnGroup {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+
+  .specialDishWatchVideoBtn {
+    a {
+      color: $textGray;
+      font-size: 20px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .playIcon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        box-shadow: 0 5px 12px 2px #e7e6e6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.specialTiffin {
+  position: relative;
+  padding: 80px 0 0;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-color: $textOrange;
+  }
+
+  .specialTiffinInner {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.specialTiffinCard {
+  * {
+    transition: all 0.4s ease;
+  }
+
+  .specialTiffinCardInner {
+    .specialTiffinContent {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 6px 2px #e5e4e487;
+      padding: 20px 20px 120px 20px;
+
+      .specialTiffinHead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .specialTiffinTitle {
+          h2 {
+            color: $textBlack;
+            font-size: 18px;
+            font-weight: 500;
+
+            a {
+              color: $textBlack;
+            }
+          }
+        }
+
+        .specialTiffinPrice {
+          span {
+            color: $textBlack;
+            font-size: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .specialTiffinStarGroup {
+        .active {
+          color: $textOrange;
+        }
+
+        .inactive {
+          color: $textGray;
+        }
+      }
+    }
+
+    .specialTiffinImg {
+      text-align: center;
+      margin-top: -80px;
+
+      img {
+        animation: rotate 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        transition: all 0.6s ease;
+      }
+
+      @keyframes rotate {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .specialTiffinCardInner {
+      .specialTiffinContent {
+        .specialTiffinHead {
+          .specialTiffinTitle {
+            h2 {
+              a {
+                color: $textOrange;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Our Meal Plan
+.ourMealPlan {
+  padding: 80px 0;
+
+  .ourMealPlanInner {
+    .ourMealPlanRow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.ourMealNav {
+  &.nav-pills {
+    gap: 20px;
+
+    li {
+      a {
+        background-color: #F5F5F5;
+        color: $textBlack;
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 50px;
+        width: 130px;
+        text-align: center;
+        border: 1px solid #F5F5F5;
+        transition: all 0.4s ease;
+
+        &.active {
+          background-color: $textOrange;
+          color: $textWhite;
+          border-color: $borderOrange;
+
+          &:hover {
+            color: $textWhite;
+          }
+        }
+
+        &:hover {
+          border-color: $borderOrange;
+          color: $textOrange;
+        }
+      }
+    }
+  }
+}
+
+.ourMealCard {
+  border-radius: 10px;
+  border: 1px solid #F2F2F2;
+  background: $textWhite;
+  padding: 20px;
+  transition: all 2s ease;
+
+  * {
+    transition: all 1s ease;
+  }
+
+  .ourMealImg {
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  .ourMealContent {
+    .ourMealHead {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .ourMealTitle {
+        h2 {
+          color: $textGray;
+          font-size: 20px;
+          font-weight: 600;
+
+          a {
+            color: $textGray;
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .ourMealPrice {
+        span {
+          color: $textOrange;
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .ourMealPara {
+    p {
+      color: $textBlack;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+
+  .ourMealBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .btnPrimary {
+      border-radius: 30px;
+      border: 1px solid $borderOrange;
+      background-color: $bgWhite;
+      color: $textOrange;
+    }
+
+    .ourMealWishlist {
+      width: 35px;
+      height: 35px;
+      background-color: #F5F5F5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+
+      svg {
+        path {
+          transition: all 1s ease;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    border-color: $borderOrange;
+
+    .ourMealContent {
+      .ourMealHead {
+        .ourMealTitle {
+          h2 {
+            color: $textOrange;
+
+            a {
+              color: $textOrange;
+            }
+          }
+        }
+      }
+    }
+
+    .ourMealImg {
+      img {
+        transform: scale(1.5) rotate(-10deg);
+      }
+    }
+
+    .ourMealBtn {
+      .btnPrimary {
+        background-color: $bgOrange;
+        color: $textWhite;
+      }
+    }
+  }
+}
+
+
+.ourMealWishlist {
+  &.active {
+    svg {
+      path {
+        fill: $bgOrange;
+        stroke: $borderOrange;
+      }
+    }
+  }
+}
+
+// Delivery Food
+.deliveryFood {
+  .deliveryFoodOuter {
+    background-image: url('../images/fastestDeliveryBanner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 80px 80px;
+    margin-bottom: 80px;
+
+    .deliveryFoodInner {
+      h4 {
+        color: $textWhite;
+        font-size: 36px;
+        font-weight: 300;
+      }
+
+      h2 {
+        color: $textWhite;
+        font-size: 50px;
+        font-weight: 500;
+
+        span {
+          color: $textOrange;
+        }
+      }
+
+      .deliveryFoodBtn {
+        border-radius: 30px;
+        background-color: $textOrange;
+        display: inline-flex;
+        padding: 13px 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        color: $textWhite;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid $borderOrange;
+        transition: all 0.4s ease;
+
+        &:hover {
+          background-color: $textWhite;
+          color: $textOrange;
+          border-color: $borderOrange;
+        }
+      }
+    }
+  }
+}
+
+// Customer Says
+.customerSays {
+  padding: 80px 0;
+  background: #FBFBFB;
+
+  .customerSaysInner {
+    .customerSaysImg {
+      img {
+        width: 100%;
+      }
+    }
+
+    .customerSaysRow {
+      display: grid;
+      grid-template-columns: 500px 1fr;
+      gap: 200px;
+
+      .customerSaysCol {
+        .customerSaysImg {
+          .customerSaysImgInner {
+            position: relative;
+
+            .customerSaysChef {
+              position: absolute;
+              bottom: 0;
+              left: 105px;
+            }
+
+            .customerSaysIcon {
+              width: 100px;
+              position: absolute;
+
+              &.customerSaysIcon1 {
+                top: 20px;
+                left: 10px;
+              }
+
+              &.customerSaysIcon2 {
+                top: 20px;
+                right: 10px;
+              }
+
+              &.customerSaysIcon3 {
+                bottom: 80px;
+                left: -24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.customerSayReview {
+  border-radius: 10px;
+  background-color: $bgWhite;
+  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.10);
+  padding: 20px;
+  width: fit-content;
+  margin-top: 50px;
+
+  .customerSayStarInner {
+    display: flex;
+    gap: 15px;
+
+    .customerSayStar {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .customerSayStarTxt {
+        h6 {
+          color: $textBlack;
+          font-size: 20px;
+          font-weight: 500;
+
+          a {
+            color: $textBlack;
+            font-size: 20px;
+            font-weight: 500;
+          }
+        }
+
+        p {
+          color: $textGray;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .customerSayRate {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+
+      .customerSayStarGroup {
+        .fa-star {
+          color: $textOrange;
+        }
+      }
+    }
+  }
+}
+
+.ourReviewer {
+  text-align: center;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: fit-content;
+  margin: -70px auto 0;
+  z-index: 1;
+  position: relative;
+
+  span {
+    color: $textBlack;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .ourReviewerInner {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+    a {
+      position: relative;
+      margin-left: -20px;
+    }
+
+    .ourReviewerCount {
+      background-color: $textOrange;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $textWhite;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
+
+// How It Work
+.howItWork {
+  padding: 80px 0;
+}
+
+.howItWorkItem {
+  text-align: center;
+  border-radius: 8px;
+  background-color: #FBFBFB;
+  padding: 40px;
+  transition: all 0.4s ease;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-color: $bgOrange;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: scale(0);
+    transition: all 0.8s ease;
+    border-radius: 50%;
+  }
+
+  .howItWorkIcon {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .howItWorkContent {
+    position: relative;
+    z-index: 1;
+    transition: all 0.8s ease;
+
+    h4 {
+      color: $textBlack;
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    p {
+      color: $textGray;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1);
+      border-radius: 0;
+    }
+
+    .howItWorkIcon {
+      svg {
+        path {
+          fill: $textWhite;
+        }
+      }
+    }
+
+    .howItWorkContent {
+      h4 {
+        color: $textWhite;
+      }
+
+      p {
+        color: $textWhite;
+      }
+    }
+  }
+}
+
+// Our Chef
+.ourChef {
+  background: #FBFBFB;
+  padding: 80px 0;
+}
+
+.ourChefCard {
+
+  .ourChefCardInner {
+    display: flex;
+    flex-direction: column;
+
+    span.ourChefImg {
+      background-color: #f5f5f5;
+      padding: 20px;
+      display: inline-block;
+      border-radius: 50%;
+      margin: 0 auto;
+      width: 160px;
+      height: 160px;
+      position: relative;
+      z-index: 2;
+      transition: all 0.4s ease;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    .ourChefContent {
+      background-color: #fff;
+      box-shadow: 0 0 8px 2px #efefef;
+      border-radius: 10px;
+      padding: 100px 20px 20px;
+      text-align: center;
+      margin-top: -70px;
+
+      h4 {
+        color: $textBlack;
+        font-size: 26px;
+        font-weight: 600;
+        transition: all 0.4s ease;
+
+        a {
+          color: $textBlack;
+          font-size: 26px;
+          font-weight: 600;
+          transition: all 0.4s ease;
+        }
+      }
+
+      span {
+        color: $textGray;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &:hover {
+    .ourChefCardInner {
+      span.ourChefImg {
+        background-color: $bgOrange;
+        border-radius: 50% 0% 50% 50%;
+      }
+
+      .ourChefContent {
+        h4 {
+          color: $textOrange;
+
+          a {
+            color: $textOrange;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Customer Says
+.clientsSay {
+  position: relative;
+  padding: 80px 0;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/mask8.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 320px;
+    height: 100%;
+    left: 0;
+    top: 0px;
+  }
+}
+
+.clientsSaySlideItem {
+  .clientsSaySlideRow {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.clientsSaySlider {
+  .owl-item {
+    &.active {
+      .clientsSaySlideItem {
+        .clientsSaySlideRow {
+          p {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.3s;
+          }
+
+          .clientsSayGroup {
+            .clientsSayNam {
+              h5 {
+                -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: fadeInDown;
+                animation-delay: 0.3s;
+              }
+
+              span {
+                -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-name: fadeInDown;
+                animation-delay: 0.3s;
+              }
+            }
+
+            .clientsSayReview {
+              -webkit-animation-duration: 2s;
+              animation-duration: 2s;
+              -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+              animation-name: fadeInDown;
+              animation-delay: 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .owl-nav {
+
+    .owl-prev,
+    .owl-next {
+      span {
+        width: 50px;
+        height: 50px;
+        background-color: #FFA31E;
+        display: inline-block;
+        font-size: 30px;
+        color: #fff;
+        border-radius: 50px;
+      }
+
+      &.disabled {
+        opacity: 1;
+
+        span {
+          background-color: #F5F5F5;
+          color: $textBlack;
+        }
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.clientsSaySlideContent {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/q.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 85px;
+    height: 80px;
+    left: 0;
+    top: -34px;
+  }
+
+  p {
+    color: $textGray;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .clientsSayGroup {
+    display: flex;
+    gap: 50px;
+
+    .clientsSayNam {
+      h5 {
+        color: $textBlack;
+        font-size: 26px;
+        font-weight: 600;
+      }
+
+      span {
+        color: $textBlack;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+
+    .clientsSayReview {
+      .active {
+        color: $textOrange;
+      }
+
+      .inactive {
+        color: $textOrange;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+// Our Blog
+.ourBlog {
+  background: #FBFBFB;
+  padding: 80px 0;
+}
+
+.ourBlogItem {
+  .ourBlogBanner {
+    border-radius: 0px 0px 30px 0px;
+    background-color: $bgWhite;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      transition: all 0.8s ease;
+    }
+
+    .ourVideoBlog {
+      a {
+        display: block;
+        position: relative;
+
+        .blogVideoPlayIcon {
+          position: absolute;
+          transform: translate(-50%, -50%);
+          top: 50%;
+          left: 50%;
+          width: 100px;
+          height: 100px;
+          z-index: 2;
+
+          svg {
+            path {
+              fill: $textWhite;
+            }
+          }
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: rgb(17 17 17 / 40%);
+        }
+      }
+    }
+
+    .ourBlogNav {
+      padding: 10px 0;
+      position: relative;
+      z-index: 2;
+      background: #fff;
+
+      ul {
+        li {
+          a {
+            color: $textBlack;
+            font-size: 14px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+              width: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .ourBlogDate {
+      width: 80px;
+      height: 80px;
+      background-color: #FFA31E;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
+      z-index: 2;
+
+      h5 {
+        color: $textWhite;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+
+      p {
+        color: $textWhite;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .ourBlogTxt {
+    margin-top: 20px;
+
+    h4 {
+      color: $textBlack;
+      font-size: 20px;
+      font-weight: 500;
+
+      a {
+        color: $textBlack;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+
+    .ourBlogLink {
+      color: $textGray;
+      font-size: 18px;
+      font-weight: 400;
+      transition: all 0.4s ease;
+
+      svg {
+        path {
+          transition: all 0.4s ease;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .ourBlogBanner {
+      a {
+        img {
+          transform: scale(1.5) rotate(10deg);
+        }
+      }
+
+      .carousel {
+        .carousel-inner {
+          .carousel-item {
+            a {
+              img {
+                transform: rotate(0deg);
+              }
+            }
+          }
+        }
+      }
+
+      .ourVideoBlog {
+        a {
+          img {
+            transform: rotate(0deg);
+          }
+        }
+      }
+
+      .ourBlogNav {
+        ul {
+          li {
+            a {
+              img {
+                transform: rotate(0deg);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ourBlogTxt {
+      .ourBlogLink {
+        color: $textOrange;
+
+        svg {
+          path {
+            fill: $textOrange;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Trusted by users
+.trustedUsers {
+  padding: 80px 0;
+
+  .trustedUsersInner {
+    .trustedUsersCarousel {
+      .trustedUsersItem {
+        text-align: center;
+
+        img {
+          width: auto;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes upDown {
+  0% {
+    transform: translate3d(0px, -20px, 0)
+  }
+
+  25% {
+    transform: translate3d(0px, 0, 0)
+  }
+
+  50% {
+    transform: translate3d(0px, -20px, 0)
+  }
+
+  75% {
+    transform: translate3d(0px, 0, 0)
+  }
+
+  to {
+    transform: translate3d(0px, -20px, 0)
+  }
+}

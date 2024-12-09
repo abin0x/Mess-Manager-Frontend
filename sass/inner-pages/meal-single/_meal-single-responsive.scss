@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+
+@include for-max-1399 {
+  .thaliDetailGroup {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .thaliDetail {
+    .thaliDetailInner {
+      .thaliDetailRow {
+        grid-template-columns: 400px 1fr;
+        gap: 50px;
+
+        .thaliDetailCol {
+          .thaliDetailImg {
+            .thaliDetailImgInner {
+              &:after {
+                top: 0;
+                height: 300px;
+                bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-1199 {
+  .thaliDetail {
+    .thaliDetailInner {
+      .thaliDetailRow {
+        grid-template-columns: 300px 1fr;
+        gap: 50px;
+      }
+    }
+  }
+}
+
+@include for-max-991 {
+  .thaliDetail {
+    .thaliDetailInner {
+      .thaliDetailRow {
+        grid-template-columns: 250px 1fr;
+        gap: 30px;
+
+        .thaliDetailCol {
+          .thaliDetailImg {
+            .thaliDetailImgInner {
+              padding: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .commonHeading {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .thaliList {
+    .list-group {
+      .list-group-item {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include for-max-767 {
+  .thaliDetail {
+    .thaliDetailInner {
+      .thaliDetailRow {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+  }
+
+  .quantityThaliContainer {
+    .quantityLabel {
+      font-size: 16px;
+    }
+  }
+
+  .ourMealListItem {
+    .ourMealListContent {
+      .ourMealListHeading {
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@include for-max-575 {
+  .commonHeading {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .quantityThaliContainer {
+    .quantityLabel {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+@include for-max-1399 {
+  .lbCheckOutBox {
+    .lbCheckOutTbl {
+      margin-bottom: 40px;
+
+      .lbCheckOutTblInner {
+
+        .lbCheckOutQuantity,
+        .lbCheckOutPrice {
+          padding: 80px 30px;
+        }
+      }
+    }
+  }
+
+  .yourInfoBtn {
+    margin-bottom: 40px;
+  }
+
+  .lbPaymentInfo {
+    .cardDetail {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@include for-max-767 {
+  .lbCheckOutBox {
+    .lbCheckOutTbl {
+      .lbCheckOutTblInner {
+        align-items: self-start;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .lbCheckOutBox {
+    .lbCheckOutTbl {
+      margin-bottom: 40px;
+
+      .lbCheckOutTblInner {
+
+        .lbCheckOutQuantity,
+        .lbCheckOutPrice {
+          padding: 0 20px 5px;
+          border-left: 0;
+        }
+      }
+    }
+  }
+
+  .lbCheckOut {
+    padding: 40px 0 0;
+  }
+}
+
+@include for-max-575 {
+  .lbCheckOutBox {
+    .lbCheckOutDetail {
+      .lbProductsPriceTbl {
+        .table {
+          tbody {
+            tr {
+              td {
+                font-size: 16px;
+
+                strong {
+                  font-size: 16px;
+                }
+
+                span {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .lbCheckOutHeading {
+    h5 {
+      font-size: 18px;
+    }
+  }
+
+  .lbCheckOutFormDetail {
+    .lbCheckOutForm {
+      .lbFormGroup {
+        input {
+          height: 40px;
+          font-size: 14px;
+
+          &::placeholder {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .btnSecondary,
+  .btnPrimary {
+    font-size: 14px;
+  }
+
+  .lbPaymentInfo {
+    .cardDetail {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .yourInfoBtn {
+    .yourInfoBtnGroup {
+      gap: 10px;
+    }
+  }
+
+  .custom_radio {
+    .formLabel {
+      margin-bottom: 0;
+
+      label {
+        color: #111111;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@include for-max-450 {
+  .lbCheckOutBox {
+    .lbCheckOutTbl {
+      .lbCheckOutTblInner {
+        .lbCheckOutDetail {
+          grid-template-columns: 1fr;
+
+          .lbCheckOutImg {
+            margin-bottom: 15px;
+          }
+
+          .lbCheckOutTxt {
+            h5 {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+/************ TABLE OF CONTENTS ***************
+
+  01. sign up page css
+
+**********************************************/
+
+// sign up css start
+.signupSec {
+  height: 100vh;
+  overflow: hidden;
+  .signupSecContainer {
+    height: 100%;
+    .signupSecInner {
+      display: grid;
+      grid-template-columns: 200px 200px 1fr;
+      height: 100%;
+      .signupSecDotsNav{
+        .backBtn{
+          padding: 40px;
+        }
+        .signupDotsNavInner{
+          padding: 40px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          gap: 10px;
+          margin-top: -80px;
+          a{
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background: $bgGray;
+            border-radius: 50px;
+            &.active{
+              background: $bgOrange;
+            }
+          }
+        }
+      }
+      .signupForm{
+        background: $bgBlack;
+        padding: 40px 150px;
+        .signupSignupHeading{
+          margin-bottom: 60px;
+          h2{
+            color: $textWhite;
+            font-family: $jacquesFrancoisFont;
+            font-size: 60px;
+            font-weight: $fw400;
+          }
+        }
+        .signupFormOuter{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+          gap: 100px;
+          height: 100%;
+          .signupFormInner{
+            .signupLogo{
+              a{
+                width: 150px;
+                display: inline-block;
+                margin-bottom: 20px;
+              }
+            }
+            form{
+              .groupField{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+              }
+              .signupGroup{
+                margin-bottom: 30px;
+                label{
+                  color: $textWhite;
+                  font-size: 20px;
+                  font-weight: $fw600;
+                }
+                .form-control{
+                  border-radius: 30px;
+                  border: 1px solid $borderWhite;
+                  color: $textWhite;
+                  font-size: 16px;
+                  background: rgba(255, 255, 255, 0.10);
+                  padding: 10px 20px;
+                  height: 60px;
+                  &::placeholder{
+                    color: $textWhite;
+                  }
+                }
+                .forgotPassword{
+                  color: $textWhite;
+                  font-size: 14px;
+                  font-weight: $fw600;
+                  display: block;
+                  text-align: right;
+                  padding: 10px;
+                  &:hover{
+                    text-decoration: underline;
+                  }
+                }
+                .input-group{
+                  position: relative;
+                  .form-control{
+                    padding: 10px 50px 10px 20px;
+                  }
+                  .inputGroupText{
+                    position: absolute;
+                    right: 0;
+                    padding: 15px 20px;
+                    top: 2px;
+                    z-index: 8;
+                    cursor: pointer;
+                    &.passwordShow{
+                      cursor: pointer;
+                      i{
+                        color: $textWhite;
+                      }
+                    }
+                  }
+                }
+              }
+              .signupSignupBtn{
+                width: 100%;
+                border-radius: 30px;
+                background: $bgOrange;
+                height: 60px;
+                color: $textWhite;
+                font-size: 20px;
+                font-weight: $fw500;
+                transition: all 0.4s ease;
+                &:hover{
+                  background: rgba(255, 255, 255, 0.10);
+                  border: 1px solid $borderOrange;
+                  color: $textOrange;
+                }
+              }
+            }
+            p{
+              color: $textWhite;
+              font-size: 18px;
+              font-weight: $fw400;
+              margin-top: 60px;
+              a{
+                color: $textOrange;
+                &:hover{
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+          .signupFormImg{
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+      .signupTab{
+        a{
+          background: $bgOrange;
+          padding: 40px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          width: 100%;
+          height: 100%;
+          span{
+            color: $textWhite;
+            font-size: 16px;
+            font-weight: $fw400;
+          }
+        }
+      }
+    }
+  }
+}
+// sign up css end

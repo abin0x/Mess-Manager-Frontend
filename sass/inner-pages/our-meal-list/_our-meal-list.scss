@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+/************ TABLE OF CONTENTS ***************
+
+  01. Our Meal List
+  02. Our Meal List Card
+  03. Service Pricing Table
+  04. Pagination
+
+**********************************************/
+
+// Our Meal List CSS Start
+.ourMealList {
+  padding: 80px 0 0;
+}
+
+// Our Meal List CSS End
+
+
+// Our Meal List Card CSS Start
+.ourMealListItem {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+  border-radius: 10px;
+  border: 1px solid #DFDFDF;
+  background: $bgWhite;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: all 0.4s ease;
+  &:hover{
+    border-color: $borderOrange;
+  }
+
+  .ourMealListImg {
+    img {
+      border-radius: 6px;
+    }
+  }
+
+  .ourMealListContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .ourMealListHeading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h4 {
+        color: $textBlack;
+        font-size: 26px;
+        font-weight: $fw600;
+        margin-bottom: 0;
+
+        a {
+          color: $textBlack;
+          font-size: 26px;
+          font-weight: $fw600;
+          display: block;
+        }
+      }
+
+      span {
+        color: $textOrange;
+        font-size: 26px;
+        font-weight: $fw600;
+      }
+    }
+
+    .ourMealListPara {
+      p {
+        color: $textBlack;
+        font-size: 16px;
+        font-weight: $fw400;
+        margin-bottom: 0;
+      }
+    }
+
+    .ourMealListButton {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .addToWishList {
+        width: 35px;
+        height: 35px;
+        background-color: #F5F5F5;
+        padding: 6px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i.fa-heart {
+          color: $textGray;
+        }
+
+        &:hover {
+          i.fa-heart {
+            color: $textOrange;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Our Meal List Card CSS End
+
+// Pagination CSS Start
+.paginationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .pagination {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+    li {
+      a {
+        color: $textBlack;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: $bgWhite;
+        border: 0;
+
+        &.active {
+          color: $textOrange;
+          background-color: $bgWhite;
+          border: 0;
+        }
+
+        &:focus {
+          box-shadow: unset;
+        }
+      }
+
+      &:first-child {
+        a {
+          border-right: 1px solid #E9E9E9;
+          z-index: 2;
+
+          &:hover {
+            border-color: #E9E9E9;
+          }
+        }
+      }
+
+      &:last-child {
+        a {
+          border-left: 1px solid #E9E9E9;
+          z-index: 2;
+
+          &:hover {
+            border-color: #E9E9E9;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Pagination CSS End

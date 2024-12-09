@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+@include for-max-1399 {
+  .ourMealListItem {
+    .ourMealListContent {
+      .ourMealListHeading {
+        h4 {
+          font-size: 20px;
+
+          a {
+            font-size: 20px;
+          }
+        }
+
+        span {
+          font-size: 20px;
+        }
+      }
+
+      .ourMealListPara {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@include for-max-1199 {
+  .ourMealListItem {
+    grid-template-columns: 150px 1fr;
+
+    .ourMealListContent {
+      gap: 8px;
+
+      .ourMealListHeading {
+        h4 {
+          font-size: 16px;
+
+          a {
+            font-size: 16px;
+          }
+        }
+
+        span {
+          font-size: 20px;
+        }
+      }
+
+      .ourMealListPara {
+        p {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@include for-max-991 {
+  .ourMealListItem {
+    grid-template-columns: 1fr;
+  }
+}
+
+@include for-max-767 {
+  .ourMealList {
+    padding: 40px 0 0;
+  }
+
+  .ourMealListItem {
+    margin-bottom: 20px;
+  }
+
+  .paginationContainer {
+    .pagination {
+      border: 0;
+      gap: 6px;
+      overflow: unset;
+      border-radius: 0;
+
+      li {
+        a {
+          border: 1px solid rgba(0, 0, 0, 0.15);
+
+          &.active {
+            border: 1px solid rgba(0, 0, 0, 0.15);
+          }
+        }
+
+        &.page-item {
+          &:first-child {
+            .page-link {
+              border-top-left-radius: 30px;
+              border-bottom-left-radius: 30px;
+            }
+          }
+
+          &:last-child {
+            .page-link {
+              border-top-right-radius: 30px;
+              border-bottom-right-radius: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

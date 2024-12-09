@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+
+@include for-max-1199 {
+  .servicePrice {
+    .servicePriceInner {
+      .servicePriceGroup {
+        .servicePriceGroupInner {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+
+  .serviceCategory {
+    .serviceCategoryInner {
+      .serviceCategoryRow {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  .serviceCategory {
+    .serviceCategoryInner {
+      .serviceCategoryRow {
+        .serviceCategoryCol {
+          &:nth-child(2) {
+            &:after {
+              content: unset;
+            }
+          }
+
+          &:nth-child(3) {
+            &:after {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 1px;
+              height: 100%;
+              background: #FFA31E;
+            }
+
+            &:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 100%;
+              height: 1px;
+              background: linear-gradient(90deg, #FFF 0%, #FFA31E 50%);
+            }
+          }
+
+          &:nth-child(4) {
+            &:after {
+              content: unset;
+            }
+
+            &:before {
+              background: linear-gradient(90deg, #FFA31E 50%, #FFF 100%);
+            }
+          }
+
+          &:nth-child(5) {
+            &:before {
+              background: linear-gradient(90deg, #FFF 0%, #FFA31E 50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@include for-max-767 {
+  .serviceCategory {
+    padding: 40px 0;
+
+    .serviceCategoryInner {
+      .serviceCategoryRow {
+        .serviceCategoryCol {
+          .serviceCategoryItem {
+            padding: 20px;
+
+            .serviceCategoryContent {
+              h6 {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .serviceBanner {
+    padding: 0px 0 40px;
+  }
+
+  .serviceBanner {
+    .serviceBannerInner {
+      .serviceBannerItem {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+
+@include for-max-575 {
+  .serviceCategory {
+    .serviceCategoryInner {
+      .serviceCategoryRow {
+        .serviceCategoryCol {
+          .serviceCategoryItem {
+            .serviceCategoryContent {
+              h6 {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-450 {
+
+  .serviceCategory {
+    .serviceCategoryInner {
+      .serviceCategoryRow {
+        grid-template-columns: repeat(1, 1fr);
+
+        .serviceCategoryCol {
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+          }
+
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(6) {
+            &:before {
+              background: linear-gradient(90deg, #FFF 0%, #FFA31E 50%, #FFF 100%);
+            }
+          }
+
+          &:nth-child(1) {
+            &:before {
+              content: unset
+            }
+          }
+
+          &:nth-child(1),
+          &:nth-child(3),
+          &:nth-child(5) {
+            &:after {
+              content: unset
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .servicePrice {
+    .servicePriceInner {
+      .servicePriceGroup {
+        .servicePriceGroupInner {
+          .servicePriceCard {
+            .servicePriceCardInner {
+              .servicePriceCardHeading {
+                padding: 15px;
+
+                h4 {
+                  font-size: 50px;
+                }
+
+                span {
+                  font-size: 28px;
+                }
+              }
+
+              .servicePriceCardPlanList {
+                ul {
+                  li {
+                    .priceTbl {
+                      font-size: 16px;
+                    }
+
+                    .planLabel {
+                      h5 {
+                        font-size: 16px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .servicePriceCardBtn {
+                padding: 0 15px;
+              }
+
+              .servicePriceCardPlanList {
+                padding: 15px;
+              }
+
+              .servicePriceCardLabel {
+                width: 60px;
+                height: 60px;
+
+                span {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

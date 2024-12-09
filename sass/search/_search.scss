@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+   Template Name: foxhub
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+.searchBox{
+  position: fixed;
+  background-color: rgb(0 0 0 / 90%);
+  width: 100%;
+  height: 0;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  transition: all 0.8s ease-in-out;
+  overflow: hidden;
+  &.searchBox2{
+    .searchBoxCard {
+      .searchBoxInner {
+        .searchBoxForm {
+          .input-group {
+            .btn{
+              background-color: $bgPink;
+              border-color: $borderPink;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.active{
+    height: 100vh;
+    overflow: visible;
+  }
+  .searchBoxCard{
+    height: 100%;
+    position: relative;
+    .searchBoxClose{
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #fff;
+      display: inline-block;
+      padding: 20px;
+      font-size: 18px;
+    }
+    .searchBoxInner{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      gap: 40px;
+      .searchBoxLogo{
+        img{
+          width: 250px;
+        }
+      }
+      .searchBoxForm{
+        .input-group{
+          input{
+            width: 400px;
+            background-color: $bgWhite;
+            border: 1px solid $textWhite;
+            border-radius: 50px;
+            color: $textBlack;
+            &::placeholder{
+              color: $textBlack;
+            }
+          }
+          .btn{
+            background-color: $bgOrange;
+            color: $textWhite;
+            border: 1px solid $textOrange;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+@include for-max-1599 {
+  .signupSec {
+    .signupSecContainer {
+      .signupSecInner {
+        .signupForm {
+          padding: 40px 80px;
+
+          .signupFormOuter {
+            gap: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-1399 {
+  .signupSec {
+    .signupSecContainer {
+      .signupSecInner {
+        grid-template-columns: 120px 120px 1fr;
+
+        .signupTab {
+          a {
+            padding: 20px 10px;
+          }
+        }
+
+        .signupSecDotsNav {
+          .backBtn {
+            padding: 20px;
+          }
+
+          .signupDotsNavInner {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-1199 {
+  .signupSec {
+    .signupSecContainer {
+      .signupSecInner {
+        .signupForm {
+          padding: 40px 20px;
+
+          .signupFormOuter {
+            grid-template-columns: 1fr 300px;
+            gap: 20px;
+
+            .signupFormInner {
+              p {
+                margin-top: 40px;
+              }
+            }
+          }
+
+          .signupSignupHeading {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-991 {
+  .signupSec {
+    .signupSecContainer {
+      .signupSecInner {
+        grid-template-columns: 80px 100px 1fr;
+
+        .signupForm {
+          .signupFormOuter {
+            grid-template-columns: 1fr 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-767 {
+  .signupSec {
+    .signupSecContainer {
+      .signupSecInner {
+        .signupForm {
+          .signupFormOuter {
+            grid-template-columns: 1fr;
+
+            .signupFormImg {
+              display: none;
+            }
+
+            .signupFormInner {
+              p {
+                font-size: 16px;
+              }
+              form {
+                .groupField {
+                  grid-template-columns: repeat(1, 1fr);
+                  gap: 0px;
+                }
+                .signupGroup {
+                  label {
+                    font-size: 16px;
+                  }
+                  .form-control {
+                    height: 50px;
+                  }
+                }
+              }
+            }
+          }
+
+          .signupSignupHeading {
+            h2 {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-575 {
+  .signupSec {
+    .signupSecContainer {
+      .signupSecInner {
+        grid-template-columns: 50px 1fr;
+
+        .signupForm {
+          .signupFormOuter {
+            .signupFormInner {
+              form {
+                .signupGroup {
+                  margin-bottom: 15px;
+
+                  label {
+                    font-size: 16px;
+                  }
+
+                  .form-control {
+                    height: 50px;
+                  }
+                }
+              }
+
+              p {
+                margin-top: 20px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .signupTab {
+          display: none;
+        }
+
+        .signupSecDotsNav {
+          .backBtn {
+            padding: 20px 10px;
+
+            svg {
+              width: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

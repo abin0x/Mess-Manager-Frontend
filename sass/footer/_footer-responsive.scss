@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+@include for-max-991 {
+  .footerSecondary {
+    .footerSecondaryInner {
+      .footerSecondaryRow {
+        grid-template-columns: 50% 50%;
+        .footerSecondaryCol {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+@include for-max-767 {
+  .footer {
+    .footerInner {
+      .footContent {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  }
+}
+
+@include for-max-575 {
+  .footer {
+    .footerInner {
+      .subscribeOuter {
+        .logisticSubscribeTxt {
+          h4 {
+            font-size: 28px;
+          }
+        }
+
+        .subscribeInpt {
+          form {
+            .input-group {
+              border-radius: 10px;
+              background-color: #ffffff;
+              padding: 10px;
+              flex-direction: column;
+            }
+
+            .form-control {
+              border: 0px;
+              width: 100%;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .trustedUsers {
+    .trustedUsersInner {
+      .trustedUsersRow {
+        margin-top: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+      }
+    }
+  }
+
+  .commonHeading.headingCenter {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  .customerSayReview {
+    .customerSayStarInner {
+      .customerSayStar {
+        .customerSayStarTxt {
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .customerSays {
+    .customerSaysInner {
+      .customerSaysRow {
+        .customerSaysCol {
+          .customerSaysImg {
+            .customerSaysImgInner {
+              .customerSaysIcon {
+                &.customerSaysIcon1 {
+                  top: 120px;
+                  left: unset;
+                  right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .howItWorkItem {
+    .howItWorkContent {
+      h4 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .deliveryFood {
+    .deliveryFoodOuter {
+      padding: 20px 20px;
+
+      .deliveryFoodInner {
+        h4 {
+          font-size: 20px;
+        }
+
+        h2 {
+          font-size: 25px;
+        }
+
+      }
+    }
+  }
+
+  .footer {
+    .footerInner {
+      .middleContent {
+        .footerMenu {
+          padding: 20px 0 20px;
+
+          ul {
+            li {
+              a {
+                color: $textWhite;
+                font-size: 16px;
+                font-weight: $fw400;
+                padding: 8px;
+              }
+            }
+          }
+        }
+      }
+
+      .subscribeOuter {
+        .logisticSubscribeTxt {
+          h4 {
+            font-size: 22px;
+          }
+
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .footContent {
+        .copyRight {
+          p {
+            font-size: 14px;
+
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .socialMedia {
+          ul {
+            li {
+              a {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footerSecondary{
+    .footerSecondaryInner {
+      padding: 130px 0 40px;
+      .footerSecondaryRow {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  .partnerLogo {
+    padding: 40px 0;
+  }
+}
+
+@include for-max-450 {
+  .footer {
+    .footerInner {
+      .middleContent {
+        .footerMenu {
+          ul {
+            li {
+              a {
+                font-size: 14px;
+                padding: 6px;
+              }
+            }
+          }
+        }
+      }
+
+      .footContent {
+        gap: 20px;
+      }
+    }
+  }
+  .footerSecondary {
+    .footerSecondaryInner {
+      .footerSecondaryRow {
+        .footerSecondaryCol {
+          .footerHeading {
+            h5 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    } 
+  }
+}

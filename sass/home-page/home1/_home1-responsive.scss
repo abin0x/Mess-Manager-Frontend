@@ -1,0 +1,755 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+@include for-max-1599 {
+  .specialDishTiffin {
+    .specialDishTiffinInner {
+      .specialDishTiffinRow {
+        .specialDishTiffinCol {
+          .specialTiffinBannerImg {
+            .sTiffinBox {
+
+              &.splTiffinRating {
+                white-space: nowrap;
+
+                .specialTiffinRight {
+                  .discountLabel {
+                    span {
+                      font-size: 16px;
+                    }
+                  }
+                }
+              }
+
+              &.specialTiffinCall {
+                left: -104px;
+              }
+            }
+
+            .specialDishTiffinImg {
+              .maskImg {
+                &.maskImg1 {
+                  top: 60px;
+                  right: -10px;
+                }
+
+                &.maskImg2 {
+                  left: 45px;
+                }
+
+                &.maskImg3 {
+                  left: 34px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-1399 {
+  .commonHeading.headingCenter {
+    width: 60%;
+  }
+
+  .specialDishTiffin {
+    .specialDishTiffinInner {
+      .specialDishTiffinRow {
+        grid-template-columns: 500px 1fr;
+
+        .specialDishTiffinCol {
+          .specialTiffinBannerImg {
+            .sTiffinBox {
+              &.specialTiffinCall {
+                left: -128px;
+                bottom: 25%;
+              }
+
+              &.splTiffinRating {
+                width: 350px;
+              }
+            }
+
+            .specialDishTiffinImg {
+              .maskImg {
+                &.maskImg2 {
+                  left: 0px;
+                  bottom: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .customerSays {
+    .customerSaysInner {
+      .customerSaysRow {
+        grid-template-columns: 500px 1fr;
+        gap: 100px;
+
+        .customerSaysCol {
+          .customerSaysImg {
+            .customerSaysImgInner {
+              .customerSaysChef {
+                left: 80px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ourChefCard {
+    .ourChefCardInner {
+      .ourChefContent {
+        h4 {
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-1199 {
+  .commonHeading {
+    &.headingCenter {
+      width: 60%;
+
+      h4 {
+        &:after {
+          content: unset;
+        }
+      }
+    }
+
+    &.headingLeft {
+      h4 {
+        &:after {
+          content: unset;
+        }
+      }
+    }
+  }
+
+  .specialDishTiffin {
+    padding: 150px 0 80px;
+
+    .specialDishTiffinInner {
+      .specialDishTiffinRow {
+        flex-direction: column-reverse;
+        display: flex;
+        gap: 100px;
+
+        .specialDishTiffinCol {
+          .specialTiffinBannerImg {
+            .specialDishTiffinImg {
+              .maskImg {
+                &.maskImg1 {
+                  right: 120px;
+                }
+
+                &.maskImg2 {
+                  left: 200px;
+                }
+
+                &.maskImg3 {
+                  left: 180px;
+                }
+              }
+            }
+
+            .sTiffinBox {
+              &.specialTiffinCall {
+                left: 65px;
+                bottom: 25%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ourMealCard {
+    margin-bottom: 20px;
+  }
+
+  .ourChefCard {
+    .ourChefCardInner {
+      .ourChefContent {
+        h4 {
+          a {
+            font-size: 18px;
+          }
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .ourBlogItem {
+    .ourBlogBanner {
+      .ourBlogDate {
+        h5 {
+          font-size: 22px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .commonHeading {
+    h4 {
+      color: #111111;
+      font-family: $jacquesFrancoisFont;
+      font-size: 30px;
+      font-weight: 400;
+      position: relative;
+    }
+  }
+
+  .customerSays {
+    .customerSaysInner {
+      .customerSaysRow {
+        grid-template-columns: 400px 1fr;
+        gap: 100px;
+      }
+    }
+  }
+
+  .specialTiffinCard {
+    margin-bottom: 20px;
+  }
+
+  .commonHeading {
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@include for-max-991 {
+
+
+  .customerSays {
+    .customerSaysInner {
+      .customerSaysRow {
+        grid-template-columns: 1fr;
+        gap: 40px;
+
+        .customerSaysCol {
+          .customerSaysImg {
+            .customerSaysImgInner {
+              .customerSaysChef {
+                left: 92px;
+                width: 90%;
+              }
+            }
+
+            .ourReviewer {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .deliveryFood {
+    .deliveryFoodOuter {
+      padding: 40px 80px;
+
+      .deliveryFoodInner {
+        h4 {
+          font-size: 30px;
+        }
+
+        h2 {
+          font-size: 38px;
+        }
+      }
+    }
+  }
+
+  .ourBlogItem {
+    margin-bottom: 30px;
+  }
+
+  .ourChefCard {
+    margin-bottom: 20px;
+  }
+
+
+  .specialDishTiffin {
+    .specialDishTiffinInner {
+      .specialDishTiffinRow {
+        gap: 50px;
+
+        .specialDishTiffinCol {
+
+          .ourHappyCustomer,
+          .specialDishBtnGroup {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 15px;
+          }
+
+          .ourHappyCustomer {
+            .ourHappyCustomerContent {
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+
+          span.moreFaster {
+            font-size: 14px;
+          }
+
+          h1 {
+            font-size: 30px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+
+          .specialTiffinBannerImg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+
+            .timeIcon {
+              width: 50px;
+            }
+
+            svg.arrowLine {
+              width: 65px;
+            }
+
+            .sTiffinBox {
+              gap: 20px;
+
+              &.specialTiffinCall,
+              &.splTiffinRating {
+                position: static;
+              }
+
+              &.splTiffinRating {
+                transform: unset;
+                width: fit-content;
+
+                .specialTiffinRight {
+                  .discountLabel {
+                    margin-right: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .specialDishTiffin {
+    .specialDishTiffinInner {
+      .specialDishTiffinRow {
+        .specialDishTiffinCol {
+          .specialTiffinBannerImg {
+            .specialDishTiffinImg {
+              .maskImg {
+                &.maskImg1 {
+                  right: -50px;
+                }
+
+                &.maskImg2 {
+                  left: 0;
+                }
+
+                &.maskImg3 {
+                  left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .trustedUsers {
+    .trustedUsersInner {
+      .trustedUsersRow {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
+  .ourChefCard {
+    .ourChefCardInner {
+      .ourChefContent {
+        h4 {
+          a {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .commonHeading {
+    &.commHeadingWhite {
+      &.headingCenter {
+        h4 {
+          &:before {
+            content: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .commonHeading {
+    &.headingCenter {
+      h4 {
+        &:before {
+          content: unset;
+        }
+      }
+    }
+  }
+}
+
+
+@include for-max-767 {
+
+  .ourBlog,
+  .howItWork,
+  .ourMealPlan,
+  .trustedUsers,
+  .clientsSay,
+  .ourChef,
+  .customerSays {
+    padding: 40px 0;
+  }
+
+  .specialDishTiffin {
+    .specialDishTiffinInner {
+      .specialDishTiffinRow {
+        .specialDishTiffinCol {
+          .specialTiffinBannerImg {
+            .specialDishTiffinImg {
+              .maskImg {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .deliveryFood {
+    .deliveryFoodOuter {
+      margin-bottom: 40px;
+    }
+  }
+
+  .commonHeading {
+    &.headingCenter {
+      width: 90%;
+
+      h4 {
+        &:before {
+          content: unset;
+        }
+      }
+    }
+  }
+
+  .clientsSaySlideItem {
+    .clientsSaySlideRow {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .clientsSaySlideItem {
+    .clientsSaySlideRow {
+      .clientsSaySlideImg {
+        img {
+          width: 300px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .customerSays {
+    .customerSaysInner {
+      .customerSaysRow {
+        gap: 50px;
+
+        .customerSaysCol {
+          .customerSaysImg {
+            .customerSaysImgInner {
+              .customerSaysChef {
+                left: 0;
+                width: 100%;
+              }
+
+              .customerSaysIcon {
+                &.customerSaysIcon1 {
+                  top: 120px;
+                  left: 4px;
+                }
+
+                &.customerSaysIcon3 {
+                  bottom: 80px;
+                  left: unset;
+                  right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .specialTiffinCard {
+    margin-bottom: 40px;
+  }
+
+  .howItWorkItem {
+    margin-bottom: 30px;
+  }
+
+  .specialDishTiffin {
+    .specialDishTiffinInner {
+      .specialDishTiffinRow {
+        .specialDishTiffinCol {
+          h1 {
+            font-size: 44px;
+          }
+
+          span {
+            &.moreFaster {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .specialTiffin {
+    &:after {
+      height: 100%;
+    }
+  }
+
+  .commonHeading p {
+    font-size: 16px;
+  }
+
+  .ourChefCard {
+    margin-bottom: 40px;
+  }
+
+  .clientsSaySlideContent {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .ourMealPlan {
+    .ourMealPlanInner {
+      .ourMealPlanRow {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+
+  .specialDishTiffin {
+    padding: 150px 0 40px;
+  }
+
+  .ourChefCard {
+    .ourChefCardInner {
+      .ourChefContent {
+        h4 {
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .clientsSay {
+    &:before {
+      width: 220px;
+      height: 40%;
+      left: -64px;
+      top: 100px;
+    }
+  }
+}
+
+@include for-max-575 {
+  .commonHeading {
+    h4 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .ourMealCard {
+    .ourMealContent {
+      .ourMealHead {
+        .ourMealTitle {
+          h2 {
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .ourMealPrice {
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .ourMealPara {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .customerSayReview {
+    .customerSayStarInner {
+      display: flex;
+      gap: 5px;
+      flex-direction: column;
+
+      .customerSayStar {
+        .customerSayStarTxt {
+          h6 {
+            font-size: 18px;
+
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .clientsSaySlideContent {
+    .clientsSayGroup {
+      display: flex;
+      gap: 4px;
+      flex-direction: column;
+
+      .clientsSayNam {
+        h5 {
+          font-size: 22px;
+        }
+      }
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .commonHeading {
+    &.headingLeft {
+      h4 {
+        &:after {
+          content: unset;
+        }
+      }
+    }
+
+    &.headingCenter {
+      h4 {
+
+        &:after,
+        &:before {
+          content: unset;
+        }
+      }
+    }
+  }
+
+  .specialDishTiffin {
+    .specialDishTiffinInner {
+      .specialDishTiffinRow {
+        .specialDishTiffinCol {
+          h1 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .customerSays {
+    .customerSaysInner {
+      .customerSaysRow {
+        .customerSaysCol {
+          .customerSaysImg {
+            .customerSaysImgInner {
+              .customerSaysChef {
+                left: 0;
+                width: 100%;
+              }
+
+              .customerSaysIcon {
+                &.customerSaysIcon1 {
+                  display: none;
+                }
+
+                &.customerSaysIcon3 {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

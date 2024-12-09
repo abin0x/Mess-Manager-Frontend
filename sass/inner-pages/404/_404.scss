@@ -1,0 +1,604 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+/************ TABLE OF CONTENTS ***************
+
+  01. 404 page css
+
+**********************************************/
+
+// 404 page css start
+
+.errorSec {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/mask14.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 320px;
+    height: 320px;
+    left: 100px;
+    bottom: -110px;
+    transform: rotate(-30deg);
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/mask14.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 320px;
+    height: 320px;
+    right: -120px;
+    top: -40px;
+    transform: rotate(-30deg);
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .errorSecInner {
+    height: 100%;
+
+    .errorSecInnerGroup {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+      height: 100%;
+
+      .errorSecLogo,
+      .errorSecImg,
+      .errorSecBtn {
+        text-align: center;
+      }
+    }
+  }
+}
+
+// 404 page css end
+
+
+
+svg .svg-elem-404-1 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 0.8s;
+}
+
+svg.active .svg-elem-404-1 {
+  fill: rgb(203, 203, 203);
+}
+
+svg .svg-elem-404-2 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 0.9s;
+}
+
+svg.active .svg-elem-404-2 {
+  fill: rgb(224, 40, 40);
+}
+
+svg .svg-elem-404-3 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 1s;
+}
+
+svg.active .svg-elem-404-3 {
+  fill: rgb(255, 128, 0);
+}
+
+svg .svg-elem-404-4 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 1.1s;
+}
+
+svg.active .svg-elem-404-4 {
+  fill: rgb(255, 163, 30);
+}
+
+svg .svg-elem-404-5 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 1.2000000000000002s;
+}
+
+svg.active .svg-elem-404-5 {
+  fill: rgb(255, 128, 0);
+}
+
+svg .svg-elem-404-6 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 1.3s;
+}
+
+svg.active .svg-elem-404-6 {
+  fill: rgb(255, 163, 30);
+}
+
+svg .svg-elem-404-7 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 1.4000000000000001s;
+}
+
+svg.active .svg-elem-404-7 {
+  fill: rgb(255, 127, 0);
+}
+
+svg .svg-elem-404-8 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 1.5s;
+}
+
+svg.active .svg-elem-404-8 {
+  fill: rgb(255, 163, 30);
+}
+
+svg .svg-elem-404-9 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 1.6s;
+}
+
+svg.active .svg-elem-404-9 {
+  fill: rgb(255, 163, 30);
+}
+
+svg .svg-elem-404-10 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 1.7000000000000002s;
+}
+
+svg.active .svg-elem-404-10 {
+  fill: rgb(255, 163, 30);
+}
+
+svg .svg-elem-404-11 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 1.8s;
+}
+
+svg.active .svg-elem-404-11 {
+  fill: rgb(255, 163, 30);
+}
+
+svg .svg-elem-404-12 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 1.9000000000000001s;
+}
+
+svg.active .svg-elem-404-12 {
+  fill: rgb(255, 128, 0);
+}
+
+svg .svg-elem-404-13 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 2s;
+}
+
+svg.active .svg-elem-404-13 {
+  fill: rgb(255, 128, 0);
+}
+
+svg .svg-elem-404-14 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 2.1s;
+}
+
+svg.active .svg-elem-404-14 {
+  fill: rgb(255, 127, 0);
+}
+
+svg .svg-elem-404-15 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 2.2s;
+}
+
+svg.active .svg-elem-404-15 {
+  fill: rgb(224, 40, 40);
+}
+
+svg .svg-elem-404-16 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 2.3s;
+}
+
+svg.active .svg-elem-404-16 {
+  fill: rgb(237, 62, 62);
+}
+
+svg .svg-elem-404-17 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 2.4000000000000004s;
+}
+
+svg.active .svg-elem-404-17 {
+  fill: rgb(17, 17, 17);
+}
+
+svg .svg-elem-404-18 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 2.5s;
+}
+
+svg.active .svg-elem-404-18 {
+  fill: rgb(17, 17, 17);
+}
+
+svg .svg-elem-404-19 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 2.6s;
+}
+
+svg.active .svg-elem-404-19 {
+  fill: rgb(17, 17, 17);
+}
+
+svg .svg-elem-404-20 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 2.7s;
+}
+
+svg.active .svg-elem-404-20 {
+  fill: rgb(17, 17, 17);
+}
+
+svg .svg-elem-404-21 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 2.8s;
+}
+
+svg.active .svg-elem-404-21 {
+  fill: rgb(255, 255, 255);
+}
+
+svg .svg-elem-404-22 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 2.9000000000000004s;
+}
+
+svg.active .svg-elem-404-22 {
+  fill: rgb(208, 70, 66);
+}
+
+svg .svg-elem-404-23 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 3s;
+}
+
+svg.active .svg-elem-404-23 {
+  fill: rgb(255, 163, 30);
+}
+
+svg .svg-elem-404-24 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 3.1000000000000005s;
+}
+
+svg.active .svg-elem-404-24 {
+  fill: rgb(255, 128, 0);
+}
+
+svg .svg-elem-404-25 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 3.2s;
+}
+
+svg.active .svg-elem-404-25 {
+  fill: rgb(255, 128, 0);
+}
+
+svg .svg-elem-404-26 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 3.3s;
+}
+
+svg.active .svg-elem-404-26 {
+  fill: rgb(255, 128, 0);
+}
+
+svg .svg-elem-404-27 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 3.4000000000000004s;
+}
+
+svg.active .svg-elem-404-27 {
+  fill: rgb(201, 31, 31);
+}
+
+svg .svg-elem-404-28 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 3.5s;
+}
+
+svg.active .svg-elem-404-28 {
+  fill: rgb(234, 199, 27);
+}
+
+svg .svg-elem-404-29 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 3.6000000000000005s;
+}
+
+svg.active .svg-elem-404-29 {
+  fill: rgb(234, 199, 27);
+}
+
+svg .svg-elem-404-30 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 3.7s;
+}
+
+svg.active .svg-elem-404-30 {
+  fill: rgb(203, 203, 203);
+}
+
+svg .svg-elem-404-31 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 3.8s;
+}
+
+svg.active .svg-elem-404-31 {
+  fill: rgb(255, 127, 0);
+}
+
+svg .svg-elem-404-32 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 3.9000000000000004s;
+}
+
+svg.active .svg-elem-404-32 {
+  fill: rgb(255, 163, 30);
+}
+
+svg .svg-elem-404-33 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 4s;
+}
+
+svg.active .svg-elem-404-33 {
+  fill: rgb(255, 128, 0);
+}
+
+svg .svg-elem-404-34 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 4.1000000000000005s;
+}
+
+svg.active .svg-elem-404-34 {
+  fill: rgb(255, 128, 0);
+}
+
+svg .svg-elem-404-35 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 4.2s;
+}
+
+svg.active .svg-elem-404-35 {
+  fill: rgb(255, 127, 0);
+}
+
+svg .svg-elem-404-36 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 4.3s;
+}
+
+svg.active .svg-elem-404-36 {
+  fill: rgb(255, 163, 30);
+}
+
+svg .svg-elem-404-37 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 4.4s;
+}
+
+svg.active .svg-elem-404-37 {
+  fill: rgb(255, 163, 30);
+}
+
+svg .svg-elem-404-38 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 4.5s;
+}
+
+svg.active .svg-elem-404-38 {
+  fill: rgb(255, 128, 0);
+}
+
+svg .svg-elem-404-39 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 4.6000000000000005s;
+}
+
+svg.active .svg-elem-404-39 {
+  fill: rgb(255, 163, 30);
+}
+
+svg .svg-elem-404-40 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 4.7s;
+}
+
+svg.active .svg-elem-404-40 {
+  fill: rgb(255, 128, 0);
+}
+
+svg .svg-elem-404-41 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 4.8s;
+}
+
+svg.active .svg-elem-404-41 {
+  fill: rgb(255, 127, 0);
+}
+
+svg .svg-elem-404-42 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 4.9s;
+}
+
+svg.active .svg-elem-404-42 {
+  fill: rgb(255, 163, 30);
+}
+
+svg .svg-elem-404-43 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 5s;
+}
+
+svg.active .svg-elem-404-43 {
+  fill: rgb(255, 128, 0);
+}
+
+svg .svg-elem-404-44 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 5.1s;
+}
+
+svg.active .svg-elem-404-44 {
+  fill: rgb(17, 17, 17);
+}
+
+svg .svg-elem-404-45 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 5.2s;
+}
+
+svg.active .svg-elem-404-45 {
+  fill: rgb(17, 17, 17);
+}
+
+svg .svg-elem-404-46 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 5.3s;
+}
+
+svg.active .svg-elem-404-46 {
+  fill: rgb(17, 17, 17);
+}
+
+svg .svg-elem-404-47 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 5.4s;
+}
+
+svg.active .svg-elem-404-47 {
+  fill: rgb(186, 99, 21);
+}
+
+svg .svg-elem-404-48 {
+  fill: transparent;
+  transition: fill 0.7s ease-out 5.5s;
+}
+
+svg.active .svg-elem-404-48 {
+  fill: rgb(186, 99, 21);
+}
+
+svg .svg-elem-404-49 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 5.6000000000000005s;
+}
+
+svg.active .svg-elem-404-49 {
+  fill: rgb(186, 99, 21);
+}
+
+svg .svg-elem-404-50 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 5.7s;
+}
+
+svg.active .svg-elem-404-50 {
+  fill: rgb(186, 99, 21);
+}
+
+svg .svg-elem-404-51 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 5.8s;
+}
+
+svg.active .svg-elem-404-51 {
+  fill: rgb(255, 127, 0);
+}
+
+svg .svg-elem-404-52 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 5.9s;
+}
+
+svg.active .svg-elem-404-52 {
+  fill: rgb(255, 127, 0);
+}
+
+svg .svg-elem-404-53 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 6s;
+}
+
+svg.active .svg-elem-404-53 {
+  fill: rgb(255, 163, 30);
+}
+
+svg .svg-elem-404-54 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 6.1000000000000005s;
+}
+
+svg.active .svg-elem-404-54 {
+  fill: rgb(153, 153, 153);
+}
+
+svg .svg-elem-404-55 {
+  fill: transparent;
+
+  transition: fill 0.7s ease-out 6.2s;
+}
+
+svg.active .svg-elem-404-55 {
+  fill: rgb(153, 153, 153);
+}
+
+
+svg .svg-elem-404-txt-1 {
+  stroke-dashoffset: 1924.0867919921875px;
+  stroke-dasharray: 1924.0867919921875px;
+  fill: transparent;
+  transition: stroke-dashoffset 8s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+    fill 8s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+}
+
+svg.active .svg-elem-404-txt-1 {
+  stroke-dashoffset: 0;
+  fill: rgb(255, 163, 30);
+}

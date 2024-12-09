@@ -1,0 +1,339 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+/************ TABLE OF CONTENTS ***************
+
+  01. Common Heading
+  02. Product Detail
+  03. Check Out Form
+  04. Payment Info
+  05. Custom Radio
+
+**********************************************/
+.lbCheckOut{
+  padding: 80px 0 0;
+}
+// Common Heading
+.lbCheckOutHeading {
+  margin-bottom: 20px;
+
+  h5 {
+    color: $textBlack;
+    font-size: 20px;
+    font-weight: $fw600;
+  }
+}
+
+// Product Detail
+.lbCheckOutBox {
+  border-radius: 10px;
+  border: 1px solid $borderOrange;
+  background: $textWhite;
+  padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+
+  .lbCheckOutTbl {
+    border-radius: 15px;
+    background: $textWhite;
+    box-shadow: 20px 10px 20px 0px rgba(0, 0, 0, 0.06);
+    margin-top: -60px;
+
+    .lbCheckOutTblInner {
+      display: flex;
+      align-items: center;
+      border-top: 1px solid $borderOrange;
+
+      &:first-child {
+        border-top: 0;
+      }
+
+      .lbCheckOutQuantity,
+      .lbCheckOutPrice {
+        border-left: 1px solid $borderOrange;
+        height: 100%;
+      }
+
+      .lbCheckOutDetail {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        padding: 20px;
+
+        .lbCheckOutImg {
+          img {
+            border-radius: 50%;
+          }
+        }
+
+        .lbCheckOutTxt {
+          h5 {
+            color: $textBlack;
+            font-size: 20px;
+            font-weight: $fw600;
+          }
+
+          p {
+            color: $textGray;
+            font-size: 14px;
+            font-weight: $fw400;
+          }
+
+          .lbProductRemove {
+            color: #FFA31E;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .lbCheckOutQuantity,
+      .lbCheckOutPrice {
+        padding: 60px 30px;
+
+        span {
+          white-space: nowrap;
+          color: $textOrange;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .lbCheckOutDetail {
+    .pormoCode {
+      .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+      }
+
+      .input-group {
+        border-radius: 30px;
+        border: 1px solid #E3E3E3;
+        background: #F5F5F5;
+        padding: 8px;
+
+        .form-control {
+          background: #F5F5F5;
+          border: 0;
+          border-top-left-radius: 100px;
+          border-bottom-left-radius: 100px;
+        }
+
+        .input-group-text {
+          width: 160px;
+          height: 50px;
+          background-color: $textOrange;
+          justify-content: center;
+          color: $textWhite;
+          font-size: 16px;
+          font-weight: 700;
+          border-radius: 100px;
+        }
+      }
+    }
+
+    .lbProductsPriceTbl {
+      margin-top: 20px;
+
+      .table {
+        tbody {
+          tr {
+            td {
+              color: $textGray;
+              font-size: 18px;
+              font-weight: $fw400;
+
+              &:last-child {
+                text-align: end;
+              }
+
+              strong {
+                color: $textBlack;
+                font-size: 20px;
+                font-weight: $fw600;
+              }
+
+              span {
+                color: $textBlack;
+                font-size: 18px;
+                font-weight: $fw400;
+              }
+            }
+
+            &:last-child {
+              td {
+                border-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Check Out Form
+.lbCheckOutFormDetail {
+  .lbCheckOutForm {
+    .lbFormGroup {
+      margin-bottom: 15px;
+
+      input {
+        height: 50px;
+      }
+
+      .form-control {
+        border-radius: 6px;
+        border: 1px solid #E3E3E3;
+        background: #F5F5F5;
+        font-size: 16px;
+        font-weight: $fw400;
+        color: $textBlack;
+
+        &::placeholder {
+          color: $textGray;
+        }
+      }
+    }
+  }
+}
+
+// Payment Info
+.lbPaymentInfo {
+  border-radius: 10px;
+  border: 1px solid $borderOrange;
+  background: $textWhite;
+  padding: 15px;
+  label{
+    color: $textGray;
+    font-size: 18px;
+    font-weight: $fw400;
+    margin-bottom: 10px;
+  }
+  .lbCheckOutPayment, .cardHolderName, .cardNumber{
+    margin-bottom: 30px;
+  }
+  .cardNumber{
+    .formLabel{
+      .formInputGroup{
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+  .cardDetail{
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    gap: 15px;
+    .formLabel{
+      .formSelectGroup{
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+.yourInfoBtn{
+  .yourInfoBtnGroup{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+// Custom Radio
+.custom_radio {
+  label {
+    color: $textGray;
+    font-size: 18px;
+    font-weight: $fw400;
+    margin-bottom: 10px;
+  }
+
+  .formLabel {
+    width: 100%;
+    margin-bottom: 10px;
+     input[type=radio] + label:before {
+      transition: all 0.3s ease;
+      box-shadow: inset 0 0 0 0.1em #c6c6c6, inset 0 0 0 1em #fff;
+      margin-top: 5px;
+    }
+    label {
+      color: $textBlack;
+      font-size: 20px;
+      font-weight: $fw600;
+
+    }
+    .ratioIcon {
+      width: 40px;
+      display: inline-block;
+      margin-left: 10px;
+      img{
+        width: 30px;
+        object-fit: scale-down;
+      }
+    }
+  }
+
+  input {
+    &[type="radio"] {
+      display: none;
+    }
+
+    &[type="radio"]+label {
+      position: relative;
+      display: inline-block;
+      padding-left: 1.5em;
+      cursor: pointer;
+      line-height: 1em;
+      transition: all 0.3s ease-in-out;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        color: white;
+        font-family: Times;
+        border-radius: 50%;
+        transition: all .3s ease;
+      }
+
+      &:before {
+        transition: all .3s ease;
+        box-shadow: inset 0 0 0 0.1em #c6c6c6, inset 0 0 0 1em #fff;
+      }
+
+      &:hover {
+        &:before {
+          transition: all .3s ease;
+          box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 1em #c6c6c6;
+        }
+      }
+    }
+
+    &[type="radio"] {
+      &:checked+label {
+        &:before {
+          transition: all .3s ease;
+          box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 2em #FFA31E;
+        }
+      }
+    }
+  }
+}

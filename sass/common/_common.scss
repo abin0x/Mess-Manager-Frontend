@@ -1,0 +1,437 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+/************ TABLE OF CONTENTS ***************
+
+  01. Common css
+  02. Common Heading
+  03. typography
+  04. Button
+  05. Loader
+
+**********************************************/
+// Common css start
+input:focus,
+.form-control:focus,
+button:focus,
+.btn:focus,
+.form-check-input:focus {
+  box-shadow: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: $robotoFont;
+}
+
+// Common css end
+
+// Common Heading start
+.commonHeading {
+  h4 {
+    color: $textBlack;
+    font-family: $jacquesFrancoisFont;
+    font-size: 36px;
+    font-weight: 400;
+    position: relative;
+
+    span {
+      color: $textOrange;
+      font-family: $coveredByYourGraceFont;
+    }
+  }
+
+  p {
+    color: $textGray;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &.headingCenter {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto 40px;
+
+    h4 {
+      width: fit-content;
+      margin: 0 auto 10px;
+
+      &:after {
+        position: absolute;
+        content: "";
+        background-image: url(../images/line1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 80px;
+        height: 10px;
+        right: -100px;
+        transform: translateY(-50%);
+        top: 50%;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        background-image: url(../images/line2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 80px;
+        height: 10px;
+        left: -100px;
+        transform: translateY(-50%);
+        top: 50%;
+      }
+    }
+  }
+
+  &.headingRight {
+    text-align: right;
+  }
+
+  &.headingLeft {
+    text-align: left;
+
+    h4 {
+      width: fit-content;
+
+      &:after {
+        position: absolute;
+        content: "";
+        background-image: url(../images/line1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 80px;
+        height: 10px;
+        right: -100px;
+        transform: translateY(-50%);
+        top: 50%;
+      }
+    }
+  }
+
+  &.commHeadingWhite {
+    h4 {
+      color: $textBlack;
+
+      span {
+        color: $textWhite;
+      }
+    }
+
+    p {
+      color: $textWhite;
+    }
+
+    &.headingCenter {
+      h4 {
+        &:after {
+          background-image: url(../images/line3.png);
+        }
+
+        &:before {
+          background-image: url(../images/line4.png);
+        }
+      }
+    }
+  }
+}
+
+// Common Heading end
+
+// Typography start
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 46px;
+}
+
+h3 {
+  font-size: 46px;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+h5 {
+  font-size: 26px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+}
+
+// Typography end
+
+// Button css start
+.btnPrimary {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border-radius: 30px;
+  background: $bgOrange;
+  color: $textWhite;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+
+  svg {
+    path {
+      stroke: $textWhite;
+      transition: all 0.4s ease;
+    }
+  }
+
+  &:hover {
+    background: transparent;
+    color: $textOrange;
+    border: 1px solid $borderOrange;
+
+    svg {
+      path {
+        stroke: $textOrange;
+      }
+    }
+  }
+  &:focus, &:active, &:first-child:active{
+    color: $textOrange;
+    background: transparent;
+    border-color: $borderOrange;
+    svg {
+      path {
+        stroke: $textOrange;
+      }
+    }
+  }
+}
+
+.btnSecondary {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border-radius: 30px;
+  border: 1px solid $borderOrange;
+  color: $textOrange;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+
+  svg {
+    path {
+      stroke: $textOrange;
+    }
+  }
+
+  &:hover {
+    background: transparent;
+    color: $textWhite;
+    background: $bgOrange;
+    transition: all 0.4s ease;
+
+    svg {
+      path {
+        stroke: $textWhite;
+      }
+    }
+  }
+
+  &:focus, &:active, &:first-child:active{
+    color: $textWhite;
+    background: $bgOrange;
+    border-color: $borderOrange;
+    svg {
+      path {
+        stroke: $textOrange;
+      }
+    }
+  }
+}
+
+
+.btnThird {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border-radius: 30px;
+  border: 1px solid $borderPink;
+  color: $textWhite;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  background: $bgGradient;
+
+  svg {
+    path {
+      stroke: $textWhite;
+      transition: all 0.4s ease;
+    }
+  }
+
+  &:hover {
+    background: transparent;
+    color: $textPink;
+    transition: all 0.4s ease;
+    border: 1px solid $borderPink;
+
+    svg {
+      path {
+        stroke: $textPink;
+      }
+    }
+  }
+  &:focus, &:active, &:first-child:active{
+    background: transparent;
+    color: $textPink;
+    border-color: $borderPink;
+    svg {
+      path {
+        stroke: $textPink;
+      }
+    }
+  }
+}
+
+.btnForth {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border-radius: 30px;
+  border: 1px solid $borderWhite;
+  color: $textPink;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  background: $bgWhite;
+
+  svg {
+    path {
+      stroke: $textWhite;
+      transition: all 0.4s ease;
+    }
+  }
+
+  &:hover {
+    background: transparent;
+    color: $textPink;
+    transition: all 0.4s ease;
+    border: 1px solid $borderPink;
+
+    svg {
+      path {
+        stroke: $textPink;
+      }
+    }
+  }
+  &:focus, &:active, &:first-child:active{
+    background: transparent;
+    color: $textPink;
+    border-color: $borderPink;
+    svg {
+      path {
+        stroke: $textPink;
+      }
+    }
+  }
+}
+// Button css end
+
+// Loader css start
+.preloader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 999999;
+
+  .preloaderInner {
+    width: 100%;
+    height: 100%;
+
+    .loaderGroup {
+      .loaderContent {
+        .loading {
+          left: 50%;
+          top: 50%;
+          font-size: 80px;
+          font-family: $coveredByYourGraceFont;
+          font-weight: bold;
+          letter-spacing: 4.4px;
+          text-transform: capitalize;
+          position: absolute;
+          overflow: hidden;
+          transform: translate(-50%, -60%);
+
+          &:before {
+            color: #aaa;
+            content: attr(data-loading-text);
+          }
+
+          &:after {
+            top: 0;
+            left: 0;
+            width: 0;
+            opacity: 1;
+            color: $textOrange;
+            overflow: hidden;
+            position: absolute;
+            content: attr(data-loading-text);
+            animation: loading 5s infinite;
+          }
+
+          @keyframes loading {
+            0% {
+              width: 0;
+            }
+
+            100% {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.preloader {
+  &.homeTwoPreloader{
+    .preloaderInner {
+      .loaderGroup {
+        .loaderContent {
+          .loading {
+            &:after {
+              color: $textPink;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Loader css end

@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+
+@include for-max-767 {
+  .lbBlogSingle {
+    padding: 40px 0 0;
+  }
+
+  .lbBlogSingleContent {
+    .ourBlogItem {
+      .ourBlogTxt {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .lbBlogComment {
+    .lbBlogCommentRow {
+      .lbBlogCommentCol {
+        .lbBlogCommentContent {
+          h4 {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .lbBlogComment {
+    .lbBlogCommentRow {
+      .lbBlogCommentCol {
+        .lbBlogCommentContent {
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-575 {
+  .lbBlogComment {
+    .lbBlogCommentRow {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .lbBlogComment {
+    .lbBlogCommentRow {
+      .lbBlogCommentCol {
+        .lbBlogCommentContent {
+          h4 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .lbBlogSingleContent {
+    .ourBlogItem {
+      .ourBlogTxt {
+        p {
+          color: #999;
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        .readMoreBtn {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .lbBlogCommentItemGroup {
+    .lbBlogComment {
+      .lbBlogCommentRow {
+        .lbBlogCommentRowInner {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+  
+  .leaveReplyBox .sendMessageInner {
+    padding: 20px;
+}
+}
+
+@include for-max-375 {
+  .lbBlogComment {
+    .lbBlogCommentRow {
+      .lbBlogCommentCol {
+        .lbBlogCommentContent {
+          p {
+            font-size: 12px;
+
+            .lbBlogCommentRow {
+              .lbBlogCommentCol {
+                .lbBlogCommentContent {
+                  h4 {
+                    small {
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .lbBlogComment {
+    .lbBlogCommentRow {
+      .lbBlogCommentCol {
+        .lbBlogCommentProfile {
+          width: 80px;
+          height: 80px;
+
+          img,
+          &:after,
+          &:before {
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .lbBlogCommentItemGroup {
+    .lbBlogComment {
+      .lbBlogCommentRow {
+        .lbBlogCommentRowInner {
+          padding: 20px 0;
+        }
+      }
+
+      .lbBlogNestedCommentRow {
+        padding-left: 20px;
+      }
+    }
+  }
+
+  .lbBlogSingleContent {
+    .ourBlogItem {
+      .ourBlogTxt {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+}

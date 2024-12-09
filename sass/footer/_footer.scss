@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+/************ TABLE OF CONTENTS ***************
+
+  01. footer home1
+  02. footer home2
+
+**********************************************/
+
+// footer home1 css start
+.footer {
+  background-color: $bgOrange;
+  padding: 40px 0;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/mask5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 85px;
+    height: 125px;
+    top: 0;
+    left: 0;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/mask4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 85px;
+    height: 125px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .footerInner {
+    .subscribeOuter {
+      padding: 0 0 20px;
+      border-bottom: 1px solid #fff;
+
+      .logisticSubscribeTxt {
+        h4 {
+          font-family: $jacquesFrancoisFont;
+          color: $textWhite;
+          font-size: 36px;
+          font-weight: 400;
+
+          span {
+            font-family: $coveredByYourGraceFont;
+          }
+        }
+
+        p {
+          color: $textWhite;
+          font-family: $robotoFont;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+
+      .subscribeInpt {
+        form {
+          .input-group {
+            border-radius: 50px;
+            background-color: $bgWhite;
+            padding: 10px;
+
+            .form-control {
+              border: 0px;
+            }
+
+            .btnPrimary {
+              &:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
+                border-radius: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .middleContent {
+      .footerLogo {
+        text-align: center;
+        padding: 40px 0 20px;
+      }
+
+      .footerMenu {
+        padding: 20px 0 40px;
+        border-bottom: 1px solid #fff;
+
+        ul {
+          justify-content: center;
+
+          li {
+            a {
+              color: $textWhite;
+              font-size: 16px;
+              font-weight: 400;
+              transition: all 0.4s ease;
+
+              &:hover {
+                color: $textBlack;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footContent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .copyRight {
+        p {
+          color: $textWhite;
+          font-size: 16px;
+          font-weight: 400;
+
+          a {
+            color: $textPlumCheese;
+            font-size: 16px;
+            font-weight: 700;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .socialMedia {
+        ul {
+          gap: 15px;
+
+          li {
+            a {
+              width: 50px;
+              height: 50px;
+              color: $textWhite;
+              font-size: 28px;
+              border-radius: 50px;
+              border: 1px solid $borderWhite;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: all 0.4s ease;
+
+              .fa-brands {
+                transition: all 0.4s ease;
+              }
+
+              &:hover {
+                border-color: $borderBlack;
+
+                .fa-brands {
+                  transform: scale(0.8);
+                  color: $textBlack;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// footer home1 css end
+
+// footer home2 css start
+.footerSecondary {
+  background-image: url(../images/home2/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: -80px;
+  position: relative;
+
+  .footerSecondaryInner {
+    padding: 150px 0 40px;
+
+    .footerSecondaryRow {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      .footerSecondaryCol {
+        display: flex;
+        justify-content: center;
+        .footerColGroup{
+          display: flex;
+          align-items: self-start;
+          flex-direction: column;
+          justify-content: center;
+          gap: 20px;
+        }
+        .footerHeading {
+          h5 {
+            background: $bgGradient;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0;
+          }
+        }
+
+        .footerSecondaryLogo {
+          margin-bottom: 20px;
+        }
+
+        .footerSecondaryPara {
+          p {
+            color: $textGray;
+            font-size: 14px;
+            font-weight: $fw400;
+          }
+        }
+
+        .footerMenu {
+          display: flex;
+          gap: 60px;
+          ul {
+            li {
+              a {
+                padding: 10px 0;
+                color: $textGray;
+                font-size: 14px;
+                font-weight: $fw400;
+                transition: all 0.4s ease;
+                &:hover{
+                  color: $textBlack;
+                }
+              }
+            }
+          }
+        }
+
+        .socialMedia {
+          ul {
+            gap: 15px;
+
+            li {
+              a {
+                width: 50px;
+                height: 50px;
+                color: $textPink;
+                font-size: 28px;
+                border-radius: 50px;
+                border: 1px solid $borderPink;
+                opacity: 0.8;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.4s ease;
+
+                .fa-brands {
+                  transition: all 0.4s ease;
+                }
+
+                &:hover {
+                  border-color: $borderBlack;
+
+                  .fa-brands {
+                    transform: scale(0.8);
+                    color: $textBlack;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footerSecondaryCopyright {
+    padding: 20px 0;
+    border-top: 1px solid $borderPink;
+
+    .footerCopyright {
+      .copyrightCenter {
+        text-align: center;
+
+        p {
+          color: $textGray;
+          font-size: 16px;
+          font-weight: $fw400;
+
+          a {
+            color: $textPink;
+            text-transform: uppercase;
+            font-weight: $fw500;
+            transition: all 0.4s ease;
+
+            &:hover {
+              color: $textBlack;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// footer home2 css end

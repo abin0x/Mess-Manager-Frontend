@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+/************ TABLE OF CONTENTS ***************
+
+  01. Service Category
+  02. Service Banner
+  03. Service Pricing Table
+
+**********************************************/
+
+
+
+// customer choice List CSS Start
+.customerChoiceList {
+  .list-group {
+    flex-wrap: wrap;
+    gap: 10px 0;
+
+    .list-group-item {
+      border: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .list-group-horizontal {
+    li {
+      input[type="checkbox"][id^="myCheckbox"] {
+        display: none;
+      }
+
+      input:checked+label {
+        svg {
+          path {
+            stroke: $textOrange;
+          }
+        }
+      }
+
+      label {
+        cursor: pointer;
+
+        svg {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+// customer choice List CSS End
+
+
+.customerReview {
+  padding: 80px 0 0;
+
+  .customerReviewInner {
+    .nav-pills {
+      border-bottom: 1px solid rgb(153 153 153 / 30%);
+      margin-bottom: 20px;
+      gap: 20px;
+
+      li {
+        a {
+          color: $textGray;
+          font-size: 20px;
+          font-weight: 600;
+          padding: 10px 0;
+
+          &.active {
+            color: $textBlack;
+            background-color: $bgWhite;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      .descriptionInner {
+        p {
+          color: $textGray;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.lbWatchVideo {
+  padding: 80px 0 0;
+}
+
+.customerChoiceVideo {
+  width: 500px;
+  height: 500px;
+  border-radius: 50% 0px 50% 50%;
+  padding: 20px;
+  background: rgb(255 163 30 / 55%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &:after,
+  &:before {
+    content: '';
+    width: 500px;
+    height: 500px;
+    border-radius: 50% 0px 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:after {
+    background: $bgOrange;
+    transform: rotate(30deg);
+  }
+
+  &:before {
+    background: rgb(255 163 30 / 50%);
+    transform: rotate(15deg);
+  }
+
+  img {
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .customerChoicePlayBtn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+  }
+}
+
+.lbWatchVideo {
+  .lbWatchVideoInner {
+    position: relative;
+
+    .lbWatchVideoRow {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .lbWatchVideoCol {
+        .customerChoiceVideo {
+          .customerChoicePlayBtn {}
+        }
+      }
+    }
+
+    .lbArrow {
+      position: absolute;
+      top: 102px;
+      left: 90px;
+    }
+  }
+}
+
+.reviewStar {
+  padding: 20px;
+  border: 1px solid #ccc;
+
+  .reviewStarInner {
+    .reviewStarHead {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .reviewStarPoint {
+        span {
+          font-size: 80px;
+          font-weight: 500;
+        }
+      }
+
+      .review5Star {
+        .review5StarInner {
+          margin-bottom: 10px;
+
+          a {
+            i {
+              color: #FFA31E;
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+
+    .reviewStarProg {
+      .reviewStarProgItm {
+        display: grid;
+        grid-template-columns: 30px 1fr 40px;
+        gap: 20px;
+        align-items: center;
+
+        .reviewStarPoint {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          i {
+            color: #FFA31E;
+          }
+        }
+
+        .reviewProgBar {
+          .progress {
+            .progress-bar {
+              background-color: #FFA31E;
+            }
+          }
+        }
+        .reviewProgPoint{
+          text-align: right;
+        }
+      }
+    }
+
+    .reviewStarContent {
+      margin-top: 20px;
+
+      h5 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.reviewComment {
+  overflow-y: scroll;
+  padding: 0 20px;
+  /* width */
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .reviewCommentInner {
+    position: relative;
+    .reviewCommenHeading {
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgb(232 232 232);
+      h5 {
+        font-size: 20px;
+      }
+    }
+
+ 
+    .reviewCommentItemGroup{
+      .reviewCommentItem {
+        border-top: 1px solid rgb(232 232 232);
+        padding-top: 25px;
+        margin-top: 25px;
+        &:first-child{
+            border: 0;
+            margin-top: 0;
+        }
+        .reviewCommentItemInner {
+          .reviewCommentHead {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 20px;
+
+            .reviewCommentInnerProfile {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              .reviewCommentProfile {
+                span {
+                  display: inline-block;
+
+                  img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                  }
+                }
+              }
+              .reviewCommentProfNam{
+                h6{
+                  font-size: 18px;
+                  margin-bottom: 0;
+                }
+                span{
+                  color: $textGray;
+                  font-size: 12px;
+                }
+              }
+            }
+
+            .review5Star {
+              .review5StarInner {
+                a {
+                  color: $textOrange;
+                  font-size: 12px;
+                  &.inactive{
+                    color: $textGray;
+                  }
+                }
+              }
+            }
+          }
+
+          .reviewCommentTxt {
+            p{
+              color: $textGray;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}

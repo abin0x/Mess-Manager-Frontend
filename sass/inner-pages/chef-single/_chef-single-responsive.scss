@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+
+@include for-max-991 {
+
+  // .lbChefDetail {
+  //   .lbChefDetailInner {
+  //     .lbChefDetailRow {
+  //       grid-template-columns: 1fr;
+  //     }
+  //   }
+  // }
+  .lbChefDetail {
+    .lbChefDetailInner {
+      .lbChefDetailRow {
+        grid-template-columns: 300px 1fr;
+        align-items: self-start;
+        gap: 30px;
+
+        .lbChefDetailCol {
+          .lbChefDetailContent {
+            h2 {
+              font-size: 24px;
+            }
+            h4 {
+              font-size: 28px;
+            }
+            h5 {
+              font-size: 28px;
+            }
+            span{
+              margin: 10px 0;
+            }
+            .lbChefDetailHorizLine {
+              margin: 20px 0 20px 0;
+            }
+            .socialMedia {
+              ul {
+                li {
+                  a {
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-max-767 {
+  .lbOurChef {
+    padding: 40px 0 0;
+  }
+  .lbChefDetail {
+    .lbChefDetailInner {
+      .lbChefDetailRow {
+        grid-template-columns: 1fr;
+      } 
+    }
+  }
+  .lbChefDetail {
+    padding: 40px 0;
+  }
+}
+@include for-max-767 {
+  .lbChefDetail {
+    .lbChefDetailInner {
+      .lbChefDetailRow {
+        .lbChefDetailCol {
+          .lbChefDetailContent {
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include for-max-767 {
+  .lbChefDetail {
+    .lbChefDetailInner {
+      .lbChefDetailRow {
+        .lbChefDetailCol {
+          .lbChefDetailContent {
+            h2 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

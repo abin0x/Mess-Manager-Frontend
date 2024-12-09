@@ -1,0 +1,1160 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+/************ TABLE OF CONTENTS ***************
+
+  01. my profile
+  02. Add Payment Details
+
+**********************************************/
+// my profile start
+.myProfile {
+  padding: 80px 0 0;
+
+  .myProfileInner {
+    .navTabs {
+      border-radius: 15px;
+      border: 1px solid $borderOrange;
+      background: $bgWhite;
+      padding: 20px;
+      margin-bottom: 40px;
+      transition: all 0.6s ease;
+
+      .nav-pills {
+        justify-content: space-between;
+
+        li {
+          a {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 10px 40px 10px 10px;
+            color: $textGray;
+            font-size: 20px;
+            font-weight: $fw600;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+
+            span {
+              width: 50px;
+              height: 50px;
+              background-color: $bgOrange;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-top-left-radius: 50px;
+              border-bottom-left-radius: 50px;
+              border-bottom-right-radius: 50px;
+            }
+
+            &.active {
+              background-color: $bgOrange;
+              color: $textWhite;
+
+              span {
+                background-color: $bgWhite;
+                border-radius: 50px;
+
+                svg {
+                  path {
+                    fill: $textOrange;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .tabContent {
+      .tab-content {
+        .myProfileContent {
+          .myProfileBx {
+            border-radius: 15px;
+            border: 1px solid $borderOrange;
+            background: $bgWhite;
+            padding: 20px;
+
+            &.lbChangePassword {
+              margin-top: 20px;
+            }
+
+            .profileHeading {
+              margin-bottom: 20px;
+
+              h4 {
+                color: $textBlack;
+                font-size: 20px;
+                font-weight: $fw600;
+              }
+            }
+
+            .personalContent {
+              .formGroup {
+                border-radius: 6px;
+                border: 1px solid #E3E3E3;
+                background: #F5F5F5;
+                margin-bottom: 20px;
+
+                input {
+                  height: 50px;
+                  border: 0;
+                  background: #F5F5F5;
+                  color: $textGray;
+                }
+
+                .input-group-text {
+                  border: 0;
+                  background: #F5F5F5;
+                  color: $textOrange;
+                  font-size: 14px;
+                  font-weight: 700;
+                }
+              }
+
+              .formRatioGroup {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                h5 {
+                  color: $textBlack;
+                  font-size: 16px;
+                  font-weight: $fw600;
+                }
+
+                .img-btn {
+                  span {
+                    border: 1px solid $borderOrange;
+                    padding: 15px 20px 10px;
+                    border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    color: $textBlack;
+                    font-size: 14px;
+                    font-weight: $fw600;
+
+                    svg {
+                      path {
+                        fill: $textOrange;
+                      }
+                    }
+                  }
+
+                  input {
+                    display: none;
+
+                    &:checked+span {
+                      background-color: $bgOrange;
+                      color: $textWhite;
+
+                      svg {
+                        path {
+                          fill: $textWhite;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .formRatioGroupInner {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                }
+              }
+
+              .btn {
+                margin-top: 20px;
+              }
+            }
+          }
+
+          .personalProfileContent {
+            height: 100%;
+
+            .myProfileBx {
+              height: 100%;
+
+              .profileImgOuter {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+
+                .profileImg {
+                  width: 200px;
+                  height: 200px;
+                  position: relative;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto;
+
+                  &:before,
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 300px 0px 300px 300px;
+                    top: 0;
+                    left: 0;
+                  }
+
+                  &:before {
+                    transform: rotate(15deg);
+                    background-color: rgb(255 163 30 / 70%);
+                  }
+
+                  &:after {
+                    transform: rotate(30deg);
+                    background-color: rgb(255 163 30 / 60%);
+                  }
+
+                  .profileImgInner {
+                    width: 200px;
+                    height: 200px;
+                    background-color: $bgOrange;
+                    border-radius: 300px 0px 300px 300px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 2;
+                    padding: 10px;
+
+                    img {
+                      position: relative;
+                      z-index: 2;
+                      border-radius: 50%;
+                    }
+                  }
+                }
+              }
+            }
+
+            .profileUserDetailBx {
+              text-align: center;
+              border-radius: 15px;
+              background: $textWhite;
+              box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.06);
+              padding: 20px;
+
+              h4 {
+                color: $textOrange;
+                font-size: 26px;
+                font-weight: $fw600;
+              }
+
+              span.profTag {
+                display: block;
+                margin-bottom: 10px;
+                color: $textGray;
+                font-size: 16px;
+                font-weight: $fw400;
+              }
+            }
+
+            .profileDetail {
+              margin-top: 100px;
+
+              ul {
+                list-style: none;
+                padding-left: 0;
+                width: fit-content;
+                margin: 0 auto;
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                li {
+                  a {
+                    svg {
+                      margin-right: 10px;
+                    }
+
+                    color: $textGray;
+                    font-size: 22px;
+                    font-weight: $fw300;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .addressContent {
+          .addressHead {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            .addressHeading {
+              h4 {
+                color: $textBlack;
+                font-size: 20px;
+                font-weight: $fw600;
+              }
+            }
+
+            .newAddressLink {
+              .newAddress {
+                color: $textOrange;
+                font-size: 16px;
+                font-weight: $fw600;
+              }
+            }
+          }
+
+          .addressCardGroup {
+            .row {
+              gap: 30px 0;
+            }
+
+            .addressCard {
+              display: grid;
+              grid-template-columns: 1fr 50px;
+              border-radius: 15px;
+              border: 1px solid #FFA31E;
+              background: #ffffff;
+              padding: 20px;
+              gap: 200px;
+              height: 100%;
+
+              .addressDetailCard {
+                .addressDetailHeading {
+                  margin-bottom: 15px;
+
+                  h5 {
+                    color: $textBlack;
+                    font-size: 20px;
+                    font-weight: 600;
+                  }
+
+                  h6 {
+                    color: $textOrange;
+                    font-size: 18px;
+                    font-weight: 600;
+                  }
+                }
+
+                p {
+                  color: $textGray;
+                  font-size: 16px;
+                  font-weight: 400;
+                  margin-bottom: 4px;
+                }
+
+                .addressContactList {
+                  .addressContactNav {
+                    list-style: none;
+                    padding-left: 0;
+                    display: flex;
+                    gap: 20px;
+
+                    li {
+                      position: relative;
+
+                      a {
+                        &:before {
+                          position: absolute;
+                          content: '|';
+                          right: -10px;
+                          color: $textGray;
+                        }
+                      }
+
+                      &:last-child {
+                        a {
+                          &:before {
+                            content: unset;
+                          }
+                        }
+                      }
+
+                      a {
+                        color: $textGray;
+                        font-size: 16px;
+                        font-weight: 400;
+                      }
+                    }
+                  }
+                }
+
+                .addressLinkBtnList {
+                  .addressLinkBtnNav {
+                    list-style: none;
+                    padding-left: 0;
+                    display: flex;
+                    gap: 20px;
+
+                    li {
+                      position: relative;
+
+                      a {
+                        &:before {
+                          position: absolute;
+                          content: '|';
+                          right: -10px;
+                          color: $textGray;
+                        }
+                      }
+
+                      &:last-child {
+                        a {
+                          color: $textGray;
+
+                          &:before {
+                            content: unset;
+                          }
+                        }
+                      }
+
+                      a {
+                        color: $textOrange;
+                        font-size: 16px;
+                        font-weight: 400;
+                        position: relative;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .myOrderContent {
+          .myOrderHistoryhead {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            .orderHistoryHeading {
+              h4 {
+                color: #111111;
+                font-size: 20px;
+                font-weight: 600;
+              }
+            }
+
+            .orderHistoryYearSelect {
+              select {}
+            }
+          }
+
+          .orderCardGroup {
+            .orderCard {
+              border-radius: 15px;
+              border: 1px solid #FFA31E;
+              background: #ffffff;
+              margin-bottom: 20px;
+
+              .orderCardInner {
+                .orderCardHead {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  border-bottom: 1px solid #FFA31E;
+                  padding: 20px;
+
+                  .orderCardHeadLeftCol {
+                    a {
+                      font-size: 14px;
+                      font-weight: $fw600;
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+
+                      .orderShipped {
+                        color: #3FD314;
+                      }
+
+                      .orderDelivered {
+                        color: #3FD314;
+                      }
+
+                      .orderCancelled {
+                        color: #FA2424;
+                      }
+                    }
+                  }
+
+                  .orderCardHeadRightCol {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    a {
+                      color: $textGray;
+                      font-size: 14px;
+                      font-weight: $fw600;
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      transition: all 0.4s ease;
+
+                      &:hover {
+                        color: $textOrange;
+                      }
+                    }
+                  }
+                }
+
+                .orderCardBody {
+                  .orderCardInnerBody {
+                    display: grid;
+                    grid-template-columns: 120px 1fr;
+                    align-items: self-start;
+                    gap: 20px;
+                    padding: 20px;
+
+                    .orderCardImgBody {
+                      border-radius: 353px 0px 353px 353px;
+                      background: #FFA31E;
+                      padding: 6px;
+
+                      img {
+                        position: relative;
+                        z-index: 1;
+                      }
+                    }
+
+                    .orderCardImgContent {
+                      h4 {
+                        color: $textOrange;
+                        font-size: 20px;
+                        font-weight: $fw600;
+
+                        a {
+                          color: $textOrange;
+                          font-size: 20px;
+                          font-weight: $fw600;
+                        }
+                      }
+
+                      p {
+                        color: #313131;
+                        font-size: 14px;
+                        font-weight: $fw400;
+                      }
+
+                      .star {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        margin-bottom: 20px;
+                        color: $textOrange;
+                      }
+                    }
+
+                    .orderCardBtn {
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+
+                      span.orderPrice {
+                        color: $textOrange;
+                        font-size: 26px;
+                        font-weight: $fw600;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .paymentMethodsContent {
+          .paymentMethodsHead {
+            margin-bottom: 20px;
+
+            .paymentMethodsHeading {
+              h4 {
+                color: $textBlack;
+                font-size: 20px;
+                font-weight: $fw600;
+              }
+            }
+          }
+
+          .paymentInfoCardOuter {
+            margin-bottom: 40px;
+
+            .paymentInfoCard {
+              .paymentInfoCardInner {
+                display: grid;
+
+                .paymentVisaCardRow {
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  gap: 20px;
+
+                  .paymentVisaCardInfoOuter {
+                    display: grid;
+                    grid-template-columns: 1fr 30px;
+                    gap: 10px;
+                    border-radius: 15px;
+                    border: 1px solid #FFA31E;
+                    background: #ffffff;
+                    padding: 20px;
+
+                    .paymentVisaCardInfo {
+                      position: relative;
+
+                      img.visaCardImg {
+                        width: 350px;
+                      }
+
+                      .paymentVisaCardInfoInner {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 320px;
+                        height: 100%;
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 40px;
+
+                        .paymentVisaCardNumber {
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+
+                          h5 {
+                            color: $textWhite;
+                            font-size: 16px;
+                            font-weight: $fw700;
+                            margin-bottom: 0;
+                          }
+                        }
+
+                        .paymentCardMiddleInfo {
+                          h4 {
+                            color: $textWhite;
+                            font-size: 14px;
+                            font-weight: $fw500;
+                            margin-bottom: 0;
+                          }
+
+                          .paymentCardEndDetail {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            .exp {
+                              color: $textWhite;
+                              font-size: 12px;
+                              font-weight: $fw400;
+                            }
+
+                            .cvv {
+                              color: $textWhite;
+                              font-size: 12px;
+                              font-weight: $fw400;
+                            }
+                          }
+                        }
+
+                        .paymentCardInfo {
+                          ul {
+                            list-style: none;
+                            padding-left: 0;
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            margin-bottom: 0;
+
+                            li {
+                              a {
+                                color: $textWhite;
+                                font-size: 12px;
+                                font-weight: $fw600;
+                                text-transform: uppercase;
+                                position: relative;
+
+                                &:before {
+                                  position: absolute;
+                                  content: '|';
+                                  right: -10px;
+                                  color: $textWhite;
+                                  top: -3px;
+                                }
+                              }
+
+                              &:last-child {
+                                a {
+                                  &:before {
+                                    content: unset;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .personalContent {
+            .formGroup {
+              border-radius: 6px;
+              border: 1px solid #E3E3E3;
+              background: #F5F5F5;
+              margin-bottom: 20px;
+
+              input {
+                height: 50px;
+                border: 0;
+                background: #F5F5F5;
+                color: $textGray;
+              }
+
+              .input-group-text {
+                border: 0;
+                background: #F5F5F5;
+                color: $textOrange;
+                font-size: 14px;
+                font-weight: 700;
+              }
+            }
+
+            .formRatioGroup {
+              display: flex;
+              align-items: center;
+              gap: 15px;
+
+              h5 {
+                color: $textBlack;
+                font-size: 16px;
+                font-weight: $fw600;
+              }
+
+              .img-btn {
+                span {
+                  border: 1px solid $borderOrange;
+                  padding: 15px 20px 10px;
+                  border-top-left-radius: 50px;
+                  border-bottom-left-radius: 50px;
+                  border-bottom-right-radius: 50px;
+                  display: flex;
+                  align-items: center;
+                  gap: 20px;
+                  color: $textBlack;
+                  font-size: 14px;
+                  font-weight: $fw600;
+
+                  svg {
+                    path {
+                      fill: $textOrange;
+                    }
+                  }
+                }
+
+                input {
+                  display: none;
+
+                  &:checked+span {
+                    background-color: $bgOrange;
+                    color: $textWhite;
+
+                    svg {
+                      path {
+                        fill: $textWhite;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .formRatioGroupInner {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+              }
+            }
+
+            .btn {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Add Payment Details start
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#circle {
+  transform-origin: center;
+  animation: rotate 3s infinite linear;
+  transform-box: fill-box;
+}
+
+.form {
+  width: 780px;
+  border-radius: 10px;
+  display: flex;
+  background: #fff;
+}
+
+.formLeft {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+.formRight {
+  flex: 1;
+  color: $textBlack;
+
+  span {
+    display: block;
+  }
+}
+
+.formRightCheck {
+  display: flex;
+  gap: 30px;
+  width: 80%;
+
+  input[type="radio"] {
+    display: none;
+  }
+}
+
+.formRightCheckCreditCard {
+  user-select: none;
+  flex: 1;
+  background: #fcfdfc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #dfe5ec;
+  position: relative;
+  padding: 20px;
+  cursor: pointer;
+  flex-direction: column-reverse;
+  gap: 10px;
+
+  &::after {
+    content: "";
+    border: 2px solid #dfe5ec;
+    height: 20px;
+    width: 20px;
+    display: block;
+    border-radius: 50%;
+  }
+}
+
+.formRightCheckCreditCardIcon {
+  width: 46px;
+}
+
+.formRightCheckPayPal {
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+  user-select: none;
+  flex: 1;
+  background: #fcfdfc;
+  border: 1px solid #dfe5ec;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+  flex-direction: column-reverse;
+  gap: 10px;
+
+  &::after {
+    content: "";
+    border: 2px solid #dfe5ec;
+    height: 20px;
+    width: 20px;
+    display: block;
+    border-radius: 50%;
+  }
+}
+
+.formRightCheckUPI {
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+  user-select: none;
+  flex: 1;
+  background: #fcfdfc;
+  border: 1px solid #dfe5ec;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+  flex-direction: column-reverse;
+  gap: 10px;
+
+  &::after {
+    content: "";
+    border: 2px solid #dfe5ec;
+    height: 20px;
+    width: 20px;
+    display: block;
+    border-radius: 50%;
+  }
+}
+
+.formRightCheckPayPalIcon {
+  width: 136px;
+}
+
+.formRightFormControl,
+.formRightFormControlName {
+  margin-top: 20px;
+}
+
+.formRightFormControlName {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formRightFormControlCardNumber {
+  height: 45px;
+  width: 100%;
+  background: #f5f5f5;
+  border: none;
+  font-size: 18px;
+  padding: 0 10px 0 10px;
+  border: 1px solid #dfe5ec;
+  border-radius: 6px;
+  color: $textGray;
+
+  &:focus {
+    outline: none;
+    border-color: $borderOrange;
+  }
+}
+
+#option1 {
+  &:checked {
+    ~ {
+      .formRightCheckCreditCard {
+        border-color: $borderOrange;
+
+        &::after {
+          border-color: $borderOrange;
+          outline: 5px solid $borderOrange;
+          outline-offset: -10px;
+          outline-style: dotted;
+        }
+      }
+    }
+  }
+}
+
+#option2 {
+  &:checked {
+    ~ {
+      .formRightCheckPayPal {
+        border-color: $borderOrange;
+
+        &::after {
+          border-color: $borderOrange;
+          outline: 5px solid $borderOrange;
+          outline-offset: -10px;
+          outline-style: dotted;
+        }
+      }
+    }
+  }
+}
+
+#option3 {
+  &:checked {
+    ~ {
+      .formRightCheckUPI {
+        border-color: $borderOrange;
+
+        &::after {
+          border-color: $borderOrange;
+          outline: 5px solid $borderOrange;
+          outline-offset: -10px;
+          outline-style: dotted;
+        }
+      }
+    }
+  }
+}
+
+.formRightExpireDate {
+  flex-basis: 60%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.formRightExpireDateMonth {
+  height: 45px;
+  background: #f5f5f5;
+  border: none;
+  font-size: 18px;
+  padding: 0 10px 0 10px;
+  border: 1px solid #dfe5ec;
+  border-radius: 6px;
+  color: $textGray;
+  width: 48%;
+
+  &:focus {
+    outline: none;
+    border-color: $borderOrange;
+  }
+}
+
+.formRightExpireDateYear {
+  width: 48%;
+  height: 45px;
+  background: #f5f5f5;
+  border: none;
+  font-size: 18px;
+  padding: 0 10px 0 10px;
+  border: 1px solid #dfe5ec;
+  border-radius: 6px;
+  color: $textGray;
+
+  &:focus {
+    outline: none;
+    border-color: $borderOrange;
+  }
+}
+
+.formRightExpireDateLeft {
+  margin-left: 5px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.formRightExpireDateLeftCvc {
+  height: 45px;
+  width: 100%;
+  background: #f5f5f5;
+  border: none;
+  font-size: 18px;
+  padding: 0 10px 0 10px;
+  border: 1px solid #dfe5ec;
+  border-radius: 6px;
+  color: $textGray;
+
+  &:focus {
+    outline: none;
+    border-color: $borderOrange;
+  }
+}
+
+.expireDateForm {
+  flex-basis: 60%;
+}
+
+// Add Payment Details End
+
+
+// my profile end
+
+/* Modal CSS Start*/
+.modal-body {
+  .personalContent {
+    .form {
+      width: 100%;
+
+      .formRight {
+        .formRightCheck {
+          gap: 15px;
+          width: 100%;
+        }
+
+        input,
+        select {
+          color: #111111;
+        }
+        .formRightFormControl {
+          .formRightFormControlCardNumber {
+            color: #111;
+            &::placeholder{
+              color:#ccc;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.modal-header h4 {
+  font-size: 28px;
+}
+
+.addNewAddress {
+  .personalContent {
+    .addNewAddressForm {
+      .formRight {
+        .formRightFormControl{
+          margin-top: 0;
+        }
+        .formRightFormControlName {
+          display: inline-block;
+
+          span {
+            display: inline-block;
+            color: #FA2424;
+          }
+        }
+
+        .formRightExpireDate {
+          .formRightExpireDateRight {
+            width: 100%;
+            flex-basis: 100%;
+            .formRightExpireDateMonth{
+              width: 100%;
+              color: #999;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+input, select, textarea{
+  box-shadow: unset;
+}
+

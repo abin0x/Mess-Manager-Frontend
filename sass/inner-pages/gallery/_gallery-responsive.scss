@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+
+@include for-max-1599 {
+  .lbGallery {
+    .lbGalleryInner {
+      .lbGalleryRow2 {
+        display: grid;
+        grid-template-columns: 1fr 287px;
+        gap: 15px;
+      }
+    }
+  }
+}
+
+@include for-max-1399 {
+  .lbGallery {
+    .lbGalleryInner {
+      .lbGalleryRow2 {
+        grid-template-columns: 1fr 245px;
+      }
+    }
+  }
+}
+
+@include for-max-1199 {
+  .lbGallery {
+    .lbGalleryInner {
+      .lbGalleryRow2 {
+        grid-template-columns: 1fr 204px;
+      }
+    }
+  }
+}
+
+@include for-max-991 {
+  .lbGallery {
+    .lbGalleryInner {
+      .lbGalleryRow2 {
+        grid-template-columns: 1fr 204px;
+      }
+    }
+  }
+}
+
+@include for-max-991 {
+  .lbGallery {
+    .lbGalleryInner {
+      .lbGalleryRow2 {
+        grid-template-columns: 1fr 150px;
+      }
+    }
+  }
+}
+
+@include for-max-767 {
+  .lbGallery {
+    .lbGalleryInner {
+      .lbGalleryRow2 {
+        grid-template-columns: 1fr 108px;
+      }
+    }
+  }
+}
+
+@include for-max-575 {
+  .lbGallery {
+    padding: 40px 0 0;
+
+    .lbGalleryInner {
+      .lbGalleryRow2 {
+        grid-template-columns: 1fr;
+
+        .lbGalleryInnerRow {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}

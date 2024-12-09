@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+
+@include for-max-1199 {
+  .lunchboxSidebar {
+    .blogSidebar {
+      .blogCardSidebarGroup {
+        .blogCardSidebar {
+          grid-template-columns: 80px 1fr;
+          gap: 10px;
+
+          .blogContentSidebar {
+            h4 {
+              font-size: 12px;
+            }
+
+            .ourBlogNav {
+              .nav {
+                li {
+                  a {
+                    span {
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ourBlogItem {
+    .ourBlogTxt {
+      h4 {
+        a {
+          color: #111111;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@include for-max-991 {
+  .lunchboxSidebar {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 99;
+    right: 0;
+    width: 320px;
+    gap: 20px;
+    overflow: scroll;
+    transform: translateX(500px);
+    transition: all 0.6s ease;
+
+    &.active {
+      transform: translateX(0px);
+      box-shadow: 0px 14px 12px 2px #c6c6c6;
+    }
+  }
+
+  .lunchboxFilterClose {
+    .blogFilterCloseIcon {
+      font-size: 16px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@include for-max-767 {
+  .ourBlogCard {
+    padding: 40px 0 0;
+  }
+}

@@ -1,0 +1,594 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Lunch Box
+  Author: Webstrot
+  Version: 1.0.0
+*/
+
+
+@include for-max-1399 {
+  .myProfile {
+    .myProfileInner {
+      .navTabs {
+        .nav-pills {
+          li {
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .tabContent {
+        .tab-content {
+          .addressContent {
+            .addressCardGroup {
+              .addressCard {
+                gap: 40px;
+              }
+            }
+          }
+
+          .paymentMethodsContent {
+            .paymentInfoCardOuter {
+              .paymentInfoCard {
+                .paymentInfoCardInner {
+                  .paymentVisaCardRow {
+                    .paymentVisaCardInfoOuter {
+                      padding: 10px;
+
+                      .paymentVisaCardInfo {
+                        .paymentVisaCardInfoInner {
+                          width: 270px;
+                          padding: 10px;
+                          gap: 35px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .myProfile .myProfileInner .tabContent .tab-content .myProfileContent .personalProfileContent .profileDetail ul li a {
+    font-size: 20px;
+  }
+}
+
+@include for-max-1199 {
+  .myProfile {
+    .myProfileInner {
+      .tabContent {
+        .tab-content {
+          .paymentMethodsContent {
+            .paymentInfoCardOuter {
+              .paymentInfoCard {
+                .paymentInfoCardInner {
+                  .paymentVisaCardRow {
+                    grid-template-columns: repeat(2, 1fr);
+
+                    .paymentVisaCardInfoOuter {
+                      .paymentVisaCardInfo {
+                        .paymentVisaCardInfoInner {
+                          width: 320px;
+                          gap: 48px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .myProfile .myProfileInner .tabContent .tab-content .myProfileContent .personalProfileContent .profileDetail ul li a {
+    font-size: 16px;
+  }
+}
+
+@include for-max-991 {
+  .myProfile {
+    .myProfileInner {
+      .navTabs {
+        .nav-pills {
+          flex-wrap: nowrap;
+          white-space: nowrap;
+          overflow: auto;
+
+          li {
+            a {
+              padding: 10px;
+
+              p {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+
+      .tabContent {
+        .tab-content {
+          .myProfileContent {
+            .personalProfileContent {
+              .personalProfileContentBx {
+                margin-bottom: 20px;
+                height: auto;
+              }
+
+              .profileDetail {
+                ul {
+                  margin-top: 30px;
+                }
+              }
+            }
+          }
+
+          .myOrderContent {
+            .orderCardGroup {
+              .orderCard {
+                .orderCardInner {
+                  .orderCardBody {
+                    .orderCardInnerBody {
+                      grid-template-columns: 80px 1fr;
+
+                      .orderCardBtn {
+                        span {
+                          &.orderPrice {
+                            font-size: 22px;
+                          }
+                        }
+                      }
+
+                      .orderCardImgContent {
+                        h4 {
+                          a {
+                            font-size: 18px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .addressContent {
+            .addressCardGroup {
+              .addressCard {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+                gap: 20px;
+
+                .addressDetailCard {
+                  .addressContactList {
+                    .addressContactNav {
+                      gap: 0;
+                      flex-direction: column;
+
+                      li {
+                        a {
+                          &:before {
+                            content: unset;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .paymentMethodsContent {
+            .paymentInfoCardOuter {
+              .paymentInfoCard {
+                .paymentInfoCardInner {
+                  .paymentVisaCardRow {
+                    .paymentVisaCardInfoOuter {
+                      .paymentVisaCardInfo {
+                        .paymentVisaCardInfoInner {
+                          width: 254px;
+                          gap: 26px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .personalContent {
+    .form {
+      width: 100%;
+    }
+  }
+
+  .modal-header h4 {
+    font-size: 22px;
+  }
+
+  .myProfile .myProfileInner .tabContent .tab-content .myProfileContent .personalProfileContent .profileDetail {
+    margin-top: 0px;
+  }
+}
+
+@include for-max-767 {
+  .myProfile {
+    .myProfileInner {
+      .tabContent {
+        .tab-content {
+          .paymentMethodsContent {
+            .paymentInfoCardOuter {
+              .paymentInfoCard {
+                .paymentInfoCardInner {
+                  .paymentVisaCardRow {
+                    grid-template-columns: repeat(1, 1fr);
+
+                    .paymentVisaCardInfoOuter {
+                      .paymentVisaCardInfo {
+                        .paymentVisaCardInfoInner {
+                          width: 320px;
+                          gap: 48px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .formRightCheck {
+    width: 100%;
+  }
+
+  .modal-header h4 {
+    font-size: 20px;
+  }
+}
+
+@include for-max-575 {
+  .myProfile {
+    .myProfileInner {
+      .tabContent {
+        .tab-content {
+          .myOrderContent {
+            .orderCardGroup {
+              .orderCard {
+                .orderCardInner {
+                  .orderCardHead {
+                    align-items: self-start;
+                    flex-direction: column;
+                    gap: 10px;
+                  }
+                }
+              }
+            }
+          }
+
+          .addressContent {
+            .addressHead {
+              display: flex;
+              align-items: self-start;
+              flex-direction: column;
+
+              .addressHeading {
+                h4 {
+                  font-size: 18px;
+                }
+              }
+
+              .newAddressLink {
+                .newAddress {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+
+          .myProfileContent {
+            .myProfileBx {
+              .personalContent {
+                .formRatioGroup {
+                  align-items: self-start;
+                  flex-direction: column;
+                }
+              }
+            }
+
+            .personalProfileContent {
+              .myProfileBx {
+                .profileImgOuter {
+                  .profileImg {
+                    width: 150px;
+                    height: 150px;
+
+                    .profileImgInner {
+                      width: 150px;
+                      height: 150px;
+                      background-color: $bgOrange;
+                      border-radius: 300px 0px 300px 300px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      z-index: 2;
+                      padding: 10px;
+                    }
+
+                    &:before,
+                    &:after {
+                      width: 150px;
+                      height: 150px;
+                    }
+                  }
+                }
+              }
+
+              .profileUserDetailBx {
+                h4 {
+                  font-size: 22px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal-header h4 {
+    font-size: 18px;
+  }
+}
+
+@include for-max-450 {
+  .myProfile {
+    .myProfileInner {
+      .navTabs {
+        padding: 10px;
+
+        .nav-pills {
+          li {
+            a {
+              padding: 5px;
+            }
+          }
+        }
+      }
+
+      .tabContent {
+        .tab-content {
+          .paymentMethodsContent {
+            .paymentInfoCardOuter {
+              .paymentInfoCard {
+                .paymentInfoCardInner {
+                  .paymentVisaCardRow {
+                    .paymentVisaCardInfoOuter {
+                      grid-template-columns: 1fr 20px;
+
+                      .paymentVisaCardInfo {
+                        .paymentVisaCardInfoInner {
+                          .paymentVisaCardNumber {
+                            h5 {
+                              font-size: 12px;
+                            }
+                          }
+
+                          .paymentCardInfo {
+                            ul {
+                              li {
+                                a {
+                                  font-size: 11px;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .myOrderContent {
+            .orderCardGroup {
+              .orderCard {
+                .orderCardInner {
+                  .orderCardBody {
+                    .orderCardInnerBody {
+                      grid-template-columns: 1fr;
+
+                      .orderCardImgBody {
+                        width: 50%;
+                      }
+
+                      .orderCardBtn {
+                        align-items: self-start;
+                        flex-direction: column-reverse;
+                        gap: 10px;
+                      }
+
+                      .orderCardImgContent {
+                        h4 {
+                          a {
+                            font-size: 16px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .addressContent {
+            .addressHead {
+              .addressHeading {
+                h4 {
+                  font-size: 16px;
+                }
+              }
+            }
+
+            .addressCardGroup {
+              .addressCard {
+                .addressDetailCard {
+                  .addressDetailHeading {
+                    h5 {
+                      font-size: 18px;
+                    }
+
+                    h6 {
+                      font-size: 16px;
+                    }
+                  }
+
+                  p {
+                    font-size: 14px;
+                  }
+
+                  .addressContactList {
+                    .addressContactNav {
+                      li {
+                        a {
+                          font-size: 14px;
+                        }
+                      }
+                    }
+                  }
+
+                  .addressLinkBtnList {
+                    .addressLinkBtnNav {
+                      li {
+                        a {
+                          font-size: 14px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .myProfileContent {
+            .personalProfileContent {
+              .profileUserDetailBx {
+                h4 {
+                  font-size: 20px;
+                }
+              }
+            }
+
+            .myProfileBx {
+              .profileHeading {
+                h4 {
+                  font-size: 16px;
+                }
+              }
+
+              .personalContent {
+                .btn {
+                  margin-top: 10px;
+                }
+              }
+
+              .personalContent {
+                .formGroup {
+                  input {
+                    font-size: 14px;
+                    height: 40px;
+                  }
+
+                  .input-group-text {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+
+          .paymentMethodsContent {
+            .paymentInfoCardOuter {
+              .paymentInfoCard {
+                .paymentInfoCardInner {
+                  .paymentVisaCardRow {
+                    .paymentVisaCardInfoOuter {
+                      .paymentVisaCardInfo {
+                        .paymentVisaCardInfoInner {
+                          width: calc(100% - 15px);
+                          gap: 20px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .personalContent {
+    .form {
+      .formRight {
+
+        input,
+        select,
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .formRightFormControl,
+  .formRightFormControlName {
+    font-size: 15px;
+  }
+
+  .formRightExpireDate {
+    flex-direction: column;
+
+    .formRightExpireDateLeft {
+      margin-top: 20px;
+    }
+  }
+
+  .formRightCheck {
+    gap: 15px;
+  }
+
+  .myProfile .myProfileInner .tabContent .tab-content .myProfileContent .personalProfileContent .profileDetail ul li a {
+    font-size: 14px;
+  }
+}
