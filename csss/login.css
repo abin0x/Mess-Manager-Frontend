@@ -78,7 +78,7 @@ body {
     color: #F77476;
     cursor: pointer;
     font-weight: bold;
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
   
   /* Active and Hidden Forms */
@@ -116,4 +116,19 @@ body {
     width: 200px; /* Adjust size as needed */
     height: auto;
   }
-    
+.backhome{
+  color: #F77476;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+  
+/* abin  */
+
+#dashboardLink {
+  display: none; /* Hidden by default */
+}
+
+#dashboardLink.visible {
+  display: block;
+}

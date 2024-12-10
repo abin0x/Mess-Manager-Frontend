@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login and Signup</title>
-  <link rel="stylesheet" href="./csss/login.css">
+  <link rel="stylesheet" href="../csss/login.css">
 </head>
 <body>
+    
   <div class="container">
     <div class="form-container">
       <!-- Replace SVG with Logo -->
       <div class="logo-container">
-        <img src="./img/l11.png" alt="Logo" class="logo">
+        <img src="../img/l11.png" alt="Logo" class="logo">
       </div>
       <div id="login-form" class="form active">
         <h2>Login</h2>
         <input type="text" id="login-username" placeholder="Username">
         <input type="password" id="login-password" placeholder="Password">
         <button onclick="login()">Login</button>
-        <p>Don't have an account? <span onclick="showSignup()">Sign Up</span></p>
+        <p>Don't have an account? <span onclick="showSignup()">Sign Up</span> Or Back To <a class="backhome" href="../index.html">Home</a></p>
       </div>
       <div id="signup-form" class="form">
         <h2>Sign Up</h2>
@@ -33,10 +34,11 @@
           <option value="admin">Admin</option>
         </select>
         <button onclick="signup()">Sign Up</button>
-        <p>Already have an account? <span onclick="showLogin()">Log In</span></p>
+        <p>Already have an account? <span onclick="showLogin()">Log In</span> Or Back To <a class="backhome" href="../index.html">Home</a></p>
       </div>
     </div>
   </div>
-  <script src="./jss/login.js"></script>
+  <script src="../jss/login.js"></script>
+  <script src="../jss/navbar.js"></script>
 </body>
 </html>
