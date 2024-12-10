@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Signup</title>
+  <link rel="stylesheet" href="./csss/login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <div class="svg-icon">
+        <!-- SVG icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#F77476" viewBox="0 0 24 24" width="48" height="48">
+          <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"></path>
+          <path d="M12 7.75a4.25 4.25 0 110 8.5 4.25 4.25 0 010-8.5zm0 6.5a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z"></path>
+        </svg>
+      </div>
+      <div id="login-form" class="form active">
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Username">
+        <input type="password" id="login-password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p>Don't have an account? <span onclick="showSignup()">Sign Up</span></p>
+      </div>
+      <div id="signup-form" class="form">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="Username">
+        <input type="email" id="signup-email" placeholder="Email">
+        <input type="password" id="signup-password" placeholder="Password">
+        <input type="password" id="signup-confirm-password" placeholder="Confirm Password">
+        <input type="text" id="signup-first-name" placeholder="First Name">
+        <input type="text" id="signup-last-name" placeholder="Last Name">
+        <select id="signup-user-type">
+          <option value="member">Member</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button onclick="signup()">Sign Up</button>
+        <p>Already have an account? <span onclick="showLogin()">Log In</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="./jss/login.js"></script>
+</body>
+</html>
